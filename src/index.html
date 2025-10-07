@@ -85,12 +85,12 @@
         </div>
 
         <div id="hero-image" class="md:w-1/2">
-          <img src="/images/profile_image.png" alt="Jonathan" class="md:w-full md:h-full"/>
+          <img src="/images/profile_image.png" alt="Jonathan" class="md:w-[800px] md:h-[800px] z-1"/>
         </div>
       </section>
 
       <!-- SECTION DIVIDER -->
-      <div id="section-divider" class="flex justify-center items-center py-8 bg-primary-dark text-white md:-mt-8  md:z-20 z-20 w-full">
+      <div id="section-divider" class="flex justify-center items-center py-8 bg-primary-dark text-white md:-mt-8  md:z-200 z-200 w-full absolute">
         <div id="scroll-track" class="flex justify-center items-center gap-16 overflow-hidden  whitespace-nowrap space-x-16 group hover:cursor-pointer">
           <ul class="flex gap-16 animate-loop-scroll aria-hidden:true space-x-16 group-hover:paused">
             <li class="flex justify-center items-center gap-6"><img class="w-8 h-8 invert" src="/images/icons/star-1.svg" alt="" /> App UI Design</li>
@@ -952,10 +952,10 @@
         </div>
 
         <div class="contact-form-and-card-section w-full h-auto flex flex-col justify-start items-start gap-8 p-10 md:flex-row md:justify-between md:items-start md:gap-12">
-          <div class="contact-form w-2/3 h-auto bg-slate-50 p-8 rounded-[24px] border-l-4 border-primary-dark">
+          <div class="contact-form w-full h-auto bg-slate-50 p-8 rounded-[24px] border-l-4 border-primary-dark md:w-2/3">
             <form action="#" class="w-full h-auto flex flex-col justify-start items-start gap-6">
               <div class="name-and-email w-full h-auto flex flex-col justify-start items-start gap-4 md:flex-row md:justify-start md:items-center">
-                <div class="name-group w-1/2 flex flex-col justify-start items-start gap-2">
+                <div class="name-group w-full flex flex-col justify-start items-start gap-2 md:w-1/2">
                   <label for="name" class="font-normal">Your name</label>
                   <input class="w-full h-12 px-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-dark"
                     type="text"
@@ -965,7 +965,7 @@
                   />
                 </div>
 
-                <div class="email-group w-1/2 flex flex-col justify-start items-start gap-2">
+                <div class="email-group w-full flex flex-col justify-start items-start gap-2 md:w-1/2">
                   <label for="email">Email</label>
                   <input class="w-full h-12 px-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-dark"
                     type="email"
@@ -977,7 +977,7 @@
               </div>
 
               <div class="phone-and-interest w-full h-auto flex flex-col justify-start items-start gap-4 md:flex-row md:justify-start md:items-center">
-                <div class="phone-group w-1/2 flex flex-col justify-start items-start gap-2">
+                <div class="phone-group w-full flex flex-col justify-start items-start gap-2 md:w-1/2">
                   <label for="phone">Phone</label>
                   <input class="w-full h-12 px-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-dark"
                     type="tel"
@@ -988,7 +988,7 @@
                   />
                 </div>
 
-                <div class="interest w-1/2 flex flex-col justify-start items-start gap-2">
+                <div class="interest w-full flex flex-col justify-start items-start gap-2 md:w-1/2">
                   <label for="interest">What are you interested in doing</label>
                   <select class="w-full h-12 px-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-dark" name="interest" id="interest">
                     <option value="">-- Select an option --</option>
@@ -1003,12 +1003,12 @@
               </div>
 
               <div class="budget-and-country w-full h-auto flex flex-col justify-start items-start gap-4 md:flex-row md:justify-start md:items-center">
-                <div class="budget w-1/2 flex flex-col justify-start items-start gap-2">
+                <div class="budget w-full flex flex-col justify-start items-start gap-2 md:w-1/2">
                   <label for="budget">Budget Range (USD)</label>
                   <input class="w-full h-12 px-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-dark" type="number" name="budget" placeholder="$200" />
                 </div>
 
-                <div class="country-group w-1/2 flex flex-col justify-start items-start gap-2">
+                <div class="country-group w-full flex flex-col justify-start items-start gap-2 md:w-1/2">
                   <label for="country">Country</label>
                   <select class="w-full h-12 px-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-dark" name="country" id="country">
                     <option value="">-- Select an option --</option>
@@ -1046,7 +1046,7 @@
             </form>
           </div>
 
-          <div class="contact-card w-1/3 h-auto bg-slate-50 rounded-[24px] border-l-4 border-primary-dark flex flex-col justify-start items-start gap-8 overflow-hidden">
+          <div class="contact-card w-full h-auto bg-slate-50 rounded-[24px] border-l-4 border-primary-dark flex flex-col justify-start items-start gap-8 md:w-1/3 overflow-hidden">
             <div class="contact-details w-full h-auto flex flex-col justify-start items-start gap-6 p-8">
               <div class="detail w-full h-auto flex flex-col justify-start items-start gap-2">
                 <h3 class="font-sans font-bold text-2xl text-tertiary">Address</h3>
@@ -1126,32 +1126,33 @@
       </div>
 
       <!-- TESTIMONIAL SECTION -->
-      <section class="testimonial-section w-full h-auto px-4 py-8 flex flex-col justify-start items-start gap-8 md:px-32 md:py-32">
+      <section class="testimonial-section w-full h-auto px-4 py-32 flex flex-col justify-start items-start gap-8 md:px-32 md:py-32 border-b-2 border-gray-200">
         <div class="section-header w-full h-auto flex flex-col justify-center items-center gap-6 py-4">
           <h4 class="font-bold text-2xl text-primary-dark md:text-3xl">Clients Testimonial</h4>
           <h2 class="font-bold text-3xl text-primary-dark md:text-5xl">Clients that <span class="text-tertiary">Speaks to My Results</span></h2>
         </div>
 
         <div class="testimonial-cards-cont w-full h-auto flex flex-col justify-start items-start gap-8 md:flex-row md:justify-center md:items-start md:gap-6">
-          <div class="testimonial-card w-1/2 h-auto bg-slate-50 p-6 rounded-[24px] border-l-4 border-primary-dark gap-8 md:gap-8 hover:bg-white hover:shadow-sm transition ease-out delay-75 hover:transition-all">
-            <div class="testimonial-card-top-cont w-full h-auto flex flex-row justify-start items-start gap-4">
-              <img src="#" alt="ashimage" class="w-[42px] h-[42px] "/>
+          <div class="testimonial-card w-full md:w-1/2 h-auto flex flex-col bg-slate-50 p-6 rounded-[24px] border-l-4 border-primary-dark gap-8 md:gap-8 hover:bg-white hover:shadow-sm transition ease-out delay-75 hover:transition-all">
 
-              <div class="client-name-and-rating w-full h-auto flex flex-col justify-start items-center">
-                <div class="client-name-and-role-cont">
-                  <h3>Ashraf Adeyemo</h3>
-                  <p>CEO Ashnimator Studios</p>
+            <div class="testimonial-card-top-cont w-full h-auto flex flex-row justify-start items-start gap-4">
+              <img src="#" alt="ashimage" class="w-[100px] h-[100px] "/>
+
+              <div class="client-name-and-rating w-full h-auto flex flex-col justify-start items-start">
+                <div class="client-name-and-role-cont w-fit h-auto flex flex-col justify-start items-start gap-2">
+                  <h3 class=" font-bold text-2xl">Ashraf Adeyemo</h3>
+                  <p class="font-normal text-[16px]">CEO Ashnimator Studios</p>
                 </div>
 
-                <div class="client-rating-cont">
-                  <div class="star">
+                <div class="client-rating-cont flex flex-row justify-start items-center gap-2 mt-2">
+                  <div class="star flex flex-row justify-start items-center gap-1">
                     <img src="/images/icons/star-1.svg" alt="" />
                     <img src="/images/icons/star-1.svg" alt="" />
                     <img src="/images/icons/star-1.svg" alt="" />
                     <img src="/images/icons/star-1.svg" alt="" />
                     <img src="/images/icons/star-1.svg" alt="" />
                   </div>
-                  <h6>5.0</h6>
+                  <h6 class="font-bold text-[24px]">5.0</h6>
                 </div>
               </div>
 
@@ -1159,27 +1160,30 @@
                 <img src="/images/icons/quote-up-square.svg" alt="" />
               </div>
             </div>
+
+            <p class="font-normal text-[16px]">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem sint reprehenderit repellat ipsa, nulla magni eaque obcaecati vero! Nemo, non? Exercitationem molestias illo sunt nemo voluptatum inventore soluta maiores aliquam?</p>
           </div>
 
-          <div class="testimonial-card w-1/2 h-auto bg-slate-50 p-6 rounded-[24px] border-l-4 border-primary-dark gap-8 md:gap-8 hover:bg-white hover:shadow-sm transition ease-out delay-75 hover:transition-all">
-            <div class="testimonial-card-top-cont w-full h-auto flex flex-row justify-start items-start gap-4">
-              <img src="#" alt="ashimage" />
+          <div class="testimonial-card w-full md:w-1/2 h-auto bg-slate-50 flex flex-col p-6 rounded-[24px] border-l-4 border-primary-dark gap-8 md:gap-8 hover:bg-white hover:shadow-sm transition ease-out delay-75 hover:transition-all">
 
-              <div class="client-name-and-rating">
-                <div class="client-name-and-role-cont">
-                  <h3>Ashraf Adeyemo</h3>
-                  <p>CEO Ashnimator Studios</p>
+            <div class="testimonial-card-top-cont w-full h-auto flex flex-row justify-start items-start gap-4">
+              <img src="#" alt="ashimage" class="w-[100px] h-[100px]"/>
+
+              <div class="client-name-and-rating w-full h-auto flex flex-col justify-start items-start">
+                <div class="client-name-and-role-cont w-fit h-auto flex flex-col justify-start items-start gap-2">
+                  <h3 class="font-bold text-2xl">Ashraf Adeyemo</h3>
+                  <p class="font-normal text-[16px]">CEO Ashnimator Studios</p>
                 </div>
 
-                <div class="client-rating-cont">
-                  <div class="star">
+                <div class="client-rating-cont client-rating-cont flex flex-row justify-start items-center gap-2 mt-2">
+                  <div class="star flex flex-row justify-start items-center gap-1">
                     <img src="/images/icons/star-1.svg" alt="" />
                     <img src="/images/icons/star-1.svg" alt="" />
                     <img src="/images/icons/star-1.svg" alt="" />
                     <img src="/images/icons/star-1.svg" alt="" />
                     <img src="/images/icons/star-1.svg" alt="" />
                   </div>
-                  <h6>5.0</h6>
+                  <h6 class="font-bold text-[24px]">5.0</h6>
                 </div>
               </div>
 
@@ -1187,124 +1191,129 @@
                 <img src="/images/icons/quote-up-square.svg" alt="" />
               </div>
             </div>
+
+            <p class="font-normal text-[16px]">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem sint reprehenderit repellat ipsa, nulla magni eaque obcaecati vero! Nemo, non? Exercitationem molestias illo sunt nemo voluptatum inventore soluta maiores aliquam?</p>
           </div>
         </div>
 
-        <div class="link-cont">
+        <div class="link-cont w-full flex justify-center items-center gap-2 text-primary-dark font-medium hover:italic hover:transition-all ease-out delay-75 hover:cursor-pointer">
           <a href="#"
-            >View more <img src="/images/icons/arrow-right.svg" alt=""
+            class="flex flex-row justify-center items-center gap-2">View more <img src="/images/icons/arrow-right.svg" alt=""
           /></a>
         </div>
       </section>
 
       <!-- FAQ SECTION -->
-      <section class="faq-section">
-        <div class="section-header">
-          <div class="section-heading-text">
-            <h4>FAQs</h4>
-            <h2>Questions? <span>Look here</span></h2>
+      <section class="faq-section flex flex-col justify-start items-start gap-8 px-4 py-32 md:px-32 md:py-32 w-full h-auto">
+        <div class="section-header w-full h-auto flex flex-col justify-center items-center gap-4 py-4">
+          <div class="section-heading-text w-full h-auto flex flex-col justify-center items-center gap-4">
+            <h4 class="font-bold text-3xl text-primary-dark md:text-2xl">FAQs</h4>
+            <h2 class="font-bold text-4xl text-primary-dark md:text5xl">Questions? <span class="text-tertiary">Look here</span></h2>
           </div>
         </div>
 
-        <div class="faq-cont">
-          <div class="faq-dropdown-block-container">
-            <div class="faq-blocks">
-              <div class="question">
-                <h4>What tools do you use?</h4>
-                <img src="/images/icons/add.svg" alt="" />
-                <img src="/images/icons/minus.svg" alt="" />
+        <div class="faq-main-cont w-full h-auto flex flex-col justify-start items-start gap-8 md:flex-row md:justify-between md:items-start md:gap-12">
+          <div class="faq-cont w-full h-auto flex flex-col justify-start items-start gap-4">
+            <div class="faq-dropdown-block-container w-full h-auto flex flex-col justify-start items-start gap-4">
+
+              <div class="faq-blocks w-full h-auto flex flex-col justify-start items-start gap-2  bg-slate-50 p-6 rounded-[24px] border-l-4 border-primary-dark mb-4 hover:bg-white hover:shadow-sm transition ease-out delay-75 hover:transition-all">
+                <div class="question w-full h-auto flex flex-row justify-between items-center gap-2">
+                  <h4 class="font-bold md:text-2xl text-[16px]">What tools do you use?</h4>
+                  <img src="/images/icons/add.svg" alt="" class="cursor-pointer bg-slate-300 p-4 rounded-lg hover:bg-slate-50"/>
+                  <img src="/images/icons/minus.svg" alt="" class="cursor-pointer bg-slate-300 p-4 rounded-lg hover:bg-slate-50 hidden"/>
+                </div>
+  
+                <div class="answer">
+                  <p class="text-[18px] md:text-lg hidden">
+                    I start by understanding your needs, then create wireframes,
+                    move into design, and if needed, handle frontend development.
+                    I keep communication clear at every stage.
+                  </p>
+                </div>
               </div>
-
-              <div class="answer">
-                <p>
-                  I start by understanding your needs, then create wireframes,
-                  move into design, and if needed, handle frontend development.
-                  I keep communication clear at every stage.
-                </p>
+  
+              <div class="faq-blocks w-full h-auto flex flex-col justify-start items-start gap-2 bg-slate-50 p-6 rounded-[24px] border-l-4 border-primary-dark mb-4 hover:bg-white hover:shadow-sm transition ease-out delay-75 hover:transition-all">
+                <div class="question w-full h-auto flex flex-row justify-between items-center">
+                  <h4 class="font-bold md:text-2xl text-[16px]">What tools do you use?</h4>
+                  <img src="/images/icons/add.svg" alt="" class="cursor-pointer bg-slate-300 p-4 rounded-lg hover:bg-slate-50"/>
+                  <img src="/images/icons/minus.svg" alt="" class="cursor-pointer bg-slate-300 p-4 rounded-lg hover:bg-slate-50 hidden"/>
+                </div>
+  
+                <div class="answer">
+                  <p class="text-[18px] md:text-lg hidden">
+                    I start by understanding your needs, then create wireframes,
+                    move into design, and if needed, handle frontend development.
+                    I keep communication clear at every stage.
+                  </p>
+                </div>
               </div>
-            </div>
-
-            <div class="faq-blocks">
-              <div class="question">
-                <h4>What tools do you use?</h4>
-                <img src="/images/icons/add.svg" alt="" />
-                <img src="/images/icons/minus.svg" alt="" />
+  
+              <div class="faq-blocks w-full h-auto flex flex-col justify-start items-start gap-2 bg-slate-50 p-6 rounded-[24px] border-l-4 border-primary-dark mb-4 hover:bg-white hover:shadow-sm transition ease-out delay-75 hover:transition-all">
+                <div class="question w-full h-auto flex flex-row justify-between items-center">
+                  <h4 class="font-bold md:text-2xl text-[16px]">What tools do you use?</h4>
+                  <img src="/images/icons/add.svg" alt="" class="cursor-pointer bg-slate-300 p-4 rounded-lg hover:bg-slate-50"/>
+                  <img src="/images/icons/minus.svg" alt="" class="cursor-pointer bg-slate-300 p-4 rounded-lg hover:bg-slate-50 hidden"/>
+                </div>
+  
+                <div class="answer">
+                  <p class="text-[18px] md:text-lg hidden">
+                    I start by understanding your needs, then create wireframes,
+                    move into design, and if needed, handle frontend development.
+                    I keep communication clear at every stage.
+                  </p>
+                </div>
               </div>
-
-              <div class="answer">
-                <p>
-                  I start by understanding your needs, then create wireframes,
-                  move into design, and if needed, handle frontend development.
-                  I keep communication clear at every stage.
-                </p>
+  
+              <div class="faq-blocks w-full h-auto flex flex-col justify-start items-start gap-2 bg-slate-50 p-6 rounded-[24px] border-l-4 border-primary-dark mb-4 hover:bg-white hover:shadow-sm transition ease-out delay-75 hover:transition-all">
+                <div class="question w-full h-auto flex flex-row justify-between items-center">
+                  <h4 class="font-bold md:text-2xl text-[16px]">What tools do you use?</h4>
+                  <img src="/images/icons/add.svg" alt="" class="cursor-pointer bg-slate-300 p-4 rounded-lg hover:bg-slate-50"/>
+                  <img src="/images/icons/minus.svg" alt="" class="cursor-pointer bg-slate-300 p-4 rounded-lg hover:bg-slate-50 hidden"/>
+                </div>
+  
+                <div class="answer">
+                  <p class="text-[18px] md:text-lg hidden">
+                    I start by understanding your needs, then create wireframes,
+                    move into design, and if needed, handle frontend development.
+                    I keep communication clear at every stage.
+                  </p>
+                </div>
               </div>
-            </div>
-
-            <div class="faq-blocks">
-              <div class="question">
-                <h4>What tools do you use?</h4>
-                <img src="/images/icons/add.svg" alt="" />
-                <img src="/images/icons/minus.svg" alt="" />
+  
+              <div class="faq-blocks w-full h-auto flex flex-col justify-start items-start gap-2 bg-slate-50 p-6 rounded-[24px] border-l-4 border-primary-dark mb-4 hover:bg-white hover:shadow-sm transition ease-out delay-75 hover:transition-all">
+                <div class="question w-full h-auto flex flex-row justify-between items-center">
+                  <h4 class="font-bold md:text-2xl text-[16px]">What tools do you use?</h4>
+                  <img src="/images/icons/add.svg" alt="" class="cursor-pointer bg-slate-300 p-4 rounded-lg hover:bg-slate-50"/>
+                  <img src="/images/icons/minus.svg" alt="" class="cursor-pointer bg-slate-300 p-4 rounded-lg hover:bg-slate-50 hidden"/>
+                </div>
+  
+                <div class="answer">
+                  <p class="text-[18px] md:text-lg hidden">
+                    I start by understanding your needs, then create wireframes,
+                    move into design, and if needed, handle frontend development.
+                    I keep communication clear at every stage.
+                  </p>
+                </div>
               </div>
-
-              <div class="answer">
-                <p>
-                  I start by understanding your needs, then create wireframes,
-                  move into design, and if needed, handle frontend development.
-                  I keep communication clear at every stage.
-                </p>
-              </div>
-            </div>
-
-            <div class="faq-blocks">
-              <div class="question">
-                <h4>What tools do you use?</h4>
-                <img src="/images/icons/add.svg" alt="" />
-                <img src="/images/icons/minus.svg" alt="" />
-              </div>
-
-              <div class="answer">
-                <p>
-                  I start by understanding your needs, then create wireframes,
-                  move into design, and if needed, handle frontend development.
-                  I keep communication clear at every stage.
-                </p>
-              </div>
-            </div>
-
-            <div class="faq-blocks">
-              <div class="question">
-                <h4>What tools do you use?</h4>
-                <img src="/images/icons/add.svg" alt="" />
-                <img src="/images/icons/minus.svg" alt="" />
-              </div>
-
-              <div class="answer">
-                <p>
-                  I start by understanding your needs, then create wireframes,
-                  move into design, and if needed, handle frontend development.
-                  I keep communication clear at every stage.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="faq-contact-card">
-          <div class="faq-contact-card-top">
-            <img src="/images/icons/message-2.svg" alt="message" />
-
-            <div class="text-group">
-              <h3>You have a different question? Ask Away!</h3>
-              <p>Your questions, My Answers. Quick Responses Guaranteed.</p>
-            </div>
-
-            <div class="button-container">
-              <a href="#">Contact Me</a>
             </div>
           </div>
-
-          <div class="faq-contact-card-bottom"></div>
+  
+          <div class="faq-contact-card w-full md:w-1/3  h-auto bg-slate-50 rounded-[24px]  flex flex-col justify-start items-start gap-12 overflow-hidden">
+            <div class="faq-contact-card-top w-full h-auto flex flex-col justify-center items-center gap-6 p-8">
+              <img src="/images/icons/message-2.svg" alt="message"  class="w-fit bg-white p-4 rounded-xl"/>
+  
+              <div class="text-group w-full h-auto flex flex-col justify-center items-center gap-8 text-center">
+                <h3 class="font-bold text-2xl md:text-4xl">You have a different question? Ask Away!</h3>
+                <p class="text-2xl font-normal">Your questions, My Answers. Quick Responses Guaranteed.</p>
+              </div>
+  
+              <div class="button-container w-full h-auto bg-primary-dark px-8 py-4 text-white font-medium cursor-pointer rounded-lg hover:transition-all ease-out delay-75 hover:px-12 md:w-fit text-center">
+                <a href="#">Contact Me</a>
+              </div>
+            </div>
+  
+            <div class="faq-contact-card-bottom bg-primary-dark p-10 w-full"></div>
+          </div>
         </div>
       </section>
 
@@ -1356,50 +1365,59 @@
       </div>
 
       <!-- FOOTER SECTION -->
-      <section class="footer-section">
-        <div class="section-header">
-          <h2>Lets <span>Connect</span> there</h2>
-          <div class="primary-button">
+      <section class="footer-section w-full h-auto px-4 py-28 flex flex-col justify-center items-center gap-8 bg-slate-100 md:px-32 md:justify-start md:items-start md:gap-12">
+        <div class="section-header w-full h-auto flex flex-col justify-center items-center gap-4 py-8 border-b-2 border-gray-200 md:flex-row md:justify-between md:items-center md:gap-6">
+          <h2 class="font-bold text-3xl md:text-5xl">Lets <span class="text-tertiary">Connect</span> here</h2>
+          <div class="primary-button w-full h-auto bg-primary-dark px-8 py-4 text-white font-medium cursor-pointer rounded-lg hover:transition-all ease-out delay-75 hover:px-12 md:w-fit text-center">
             <a href="#">Contact Me</a>
           </div>
         </div>
 
-        <div class="footer-links-and-contact-cont">
-          <div class="name-and-socials">
-            <h2>Jonathan Joseph</h2>
-            <div class="socials">
-              <img src="/images/icons/facebook.svg" alt="facebook" />
+        <div class="footer-links-and-contact-cont w-full h-auto flex flex-col justify-center items-center gap-8 md:flex-row md:justify-between md:items-start md:gap-12">
+          <div class="name-and-socials w-fit h-auto flex flex-col justify-center items-center gap-4 md:items-start justify-start">
+            <h2 class="font-bold text-4xl md:text-center">Jonathan Joseph</h2>
+            <div class="socials flex flex-row justify-center items-center gap-4 md:justify-start md:items-start">
+              <img src="/images/icons/facebook.svg" alt="facebook" class="bg-tertiary p-4 rounded-lg w-[62px]"/>
 
-              <img src="/images/icons/instagram.svg" alt="" />
+              <img src="/images/icons/instagram.svg" alt="" class="bg-tertiary p-4 rounded-lg w-[62px]"/>
 
-              <img src="/images/icons/skill-icons_css.svg" alt="" />
+              <img src="/images/icons/skill-icons_css.svg" alt="" class="bg-tertiary p-4 rounded-lg w-[62px]"/>
             </div>
           </div>
 
-          <div class="navigation-links">
-            <a href="#">Home</a>
-            <a href="#">Services</a>
-            <a href="#">About</a>
-            <a href="#">Projects</a>
-            <a href="#">FAQs</a>
+          <div class="navigation-links w-fit h-auto flex flex-col justify-center items-center gap-4 md:items-start md:justify-start">
+            <div class="footer-nav-heade">
+              <h3 class="font-medium text-3xl text-tertiary">Navigation</h3>
+            </div>
+
+            <div class="navigation-links w-fit h-auto flex flex-col justify-center items-center gap-4 md:items-start md:justify-start">
+              <a href="#" class="text-[24px] hover:font-bold">Home</a>
+              <a href="#" class="text-[24px] hover:font-bold">Services</a>
+              <a href="#" class="text-[24px] hover:font-bold">About</a>
+              <a href="#" class="text-[24px] hover:font-bold">Projects</a>
+              <a href="#" class="text-[24px] hover:font-bold">FAQs</a>
+            </div>
           </div>
 
-          <div class="footer-contact">
-            <p>+234-7065008157</p>
-            <p>www.jonathanwebportfolio.netlify.app</p>
-            <p>ikpejonathanjoseph@gmail.com</p>
-            <p>29 Durban Street, Wuse 2 Abuja</p>
+          <div class="footer-contact flex flex-col justify-center items-center gap-4 md:items-start md:justify-start">
+            <h3 class="font-medium text-3xl text-tertiary mb-4">Contact</h3>
+            <div class="footer-contact-details w-fit h-auto flex flex-col justify-center items-center gap-4 md:items-start md:justify-start">
+              <p class="text-[24px] font-medium">+234-7065008157</p>
+              <p class="text-[24px] font-medium">www.jonathanwebportfolio.netlify.app</p>
+              <p class="text-[24px] font-medium">ikpejonathanjoseph@gmail.com</p>
+              <p class="text-[24px] font-medium">29 Durban Street, Wuse 2 Abuja</p>
+            </div>
           </div>
         </div>
       </section>
 
       <!-- COPYRIGHT SECTION -->
-      <section class="copyright">
-        <p>Copyright c 2025 Jonathan Joseph</p>
-        <div class="copyright-links">
-          <a href="#">User Terms & Conditions</a>
-          <p>|</p>
-          <a href="#">Privacy Policy</a>
+      <section class="copyright w-full h-auto px-4 py-8 flex flex-col justify-center items-center gap-4 bg-primary-dark text-center text-white md:flex-row md:justify-between md:items-center md:px-32">
+        <p class="font-bold text-2xl md:text-3xl">Copyright &copy; 2025 Jonathan Joseph</p>
+        <div class="copyright-links flex flex-row justify-center items-center gap-4 md:gap-8">
+          <a href="#" class="font-normal text-2xl md:text-3xl">User Terms & Conditions</a>
+          <p class="font-normal text-2xl md:text-3xl">|</p>
+          <a href="#" class="font-normal text-2xl md:text-3xl">Privacy Policy</a>
         </div>
       </section>
     </div>
