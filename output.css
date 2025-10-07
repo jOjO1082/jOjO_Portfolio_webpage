@@ -671,6 +671,18 @@ video {
   width: 100%;
 }
 
+.w-\[12\] {
+  width: 12;
+}
+
+.w-\[200px\] {
+  width: 200px;
+}
+
+.w-\[300px\] {
+  width: 300px;
+}
+
 @keyframes loop-scroll {
   from {
     transform: translateX(0);
