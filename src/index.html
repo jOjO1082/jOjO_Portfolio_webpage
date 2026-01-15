@@ -8,61 +8,77 @@
     <!-- LINKS -->
     <link href="output.css" rel="stylesheet" />
     <!-- <link rel="stylesheet" href="/css/style.css" /> -->
+
+
+    <!-- FontAwesomeCDN -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+     <!-- ScriptFiles -->
+     
+
   </head>
   <body class="">
-    <div id="wrapper" class=" font-sans w-full flex flex-col relative gap-10 overflow-x-hidden md:gap-32">
-      <!-- NAVIGATION -->
-      <div id="nav-bar" class="md:flex md:justify-around md:items-center md:px-32 md:py-6 px-4 py-8 flex justify-between items-center relative">
 
-        <div id="desktop-menu" class="md:flex md:justify-between md:items-center md:w-full flex  justify-between items-center w-full">
+
+    <div id="wrapper" class="w-full h-auto font-sans flex flex-col gap-10  md:gap-32">
+
+      <!-- NAVIGATION -->
+      <div id="nav-bar" class="w-full h-auto flex flex-row justify-between items-center px-4 py-4 md:px-8 lg:px-28 z-1 relative">
+
+        <div id="desktop-menu" class="w-full h-auto flex flex-row justify-between items-center">
 
           <div id="logo-cont" class="w-fit">
-            <a href="#" class="cursor-pointer">
-              <h1 class="font-bold font-sans md:text-5xl text-2xl hover:text-primary-dark">Jonathan Joseph</h1>
+            <a href="index.html" class="cursor-pointer">
+              <h1 class="font-bold font-sans md:text-2xl text-lg hover:text-primary-dark">Jonathan Joseph</h1>
             </a>
               
           </div>
 
-          <div id="link" class="md:flex md:gap-8  text-gray-900 hidden">
-            <a href="#" class="text-lg hover:font-bold">Services</a>
-            <a href="#" class="text-lg hover:font-bold">Projects</a>
-            <a href="#" class="text-lg hover:font-bold">Testimonials</a>
+          <div id="link" class="md:flex md:gap-4  text-gray-900 hidden">
+            <a href="index.html" class="text-lg font-bold text-tertiary hover:font-bold hover:text-tertiary">Home</a>
+            <a href="services.html" class="text-lg hover:font-bold hover:text-tertiary">Services</a>
+            <a href="projects.html" class="text-lg hover:font-bold hover:text-tertiary">Projects</a>
+            <a href="testimonials.html" class="text-lg hover:font-bold hover:text-tertiary">Testimonials</a>
           </div>
 
-          <div id="primary-button" class="md:bg-primary-dark md:text-white md:font-medium px-10 py-4 rounded-lg hover:px-12 transition ease-in-out delay-75 hover:transition-all md:block hidden">
+          <div id="primary-button" class="md:bg-primary-dark md:text-white md:font-medium px-10 py-2 rounded-lg hover:px-12 transition ease-in-out delay-75 hover:transition-all md:block hidden">
             <a href="#">Lets Talk</a>
           </div>
 
           <div id="menu-button" class="md:hidden block font-bold cursor-pointer">
-            <img src="/images/icons/menu.svg" alt="" class="w-12 h-10"/>
+            <i class="fa-solid fa-bars"></i>
           </div>
         </div>
 
         <!-- Mobile Menu -->
-        <div id="mobile-menu" class="mobile-menu flex-col absolute top-1 left-0 w-full bg-tertiary p-4 shadow-lg z-10 hidden rounded-b-lg">
-          <div id="logo-cont-mobile" class="flex justify-between items-center mb-8">
-            <h1 class="font-bold text-2xl cursor-pointer">Jonathan Joseph</h1>
-            <img src="/images/icons/close-circle.svg" alt="" />
+        <div id="mobile-menu" class="mobile-menu w-full h-auto bg-tertiary flex flex-col justify-start items-start gap-6 px-4 py-8 absolute top-0 left-0 transition-transform ease-in-out delay-75 -translate-y-[100%]">
+          <div id="logo-cont-mobile" class="w-full h- auto flex justify-between items-center ">
+            <a href="index.html" class="font-bold text-2xl cursor-pointer">Jonathan Joseph</a>
+            <i class="fa-solid fa-xmark cursor-pointer" id="close-icon"></i>
           </div>
 
           <div id="mobile-menu-links" class="flex flex-col gap-6 text-white">
-            <a href="#" class="hover:font-bold">Services</a>
-            <a href="#" class="hover:font-bold">Projects</a>
-            <a href="#" class="hover:font-bold">Testimonials</a>
+            <a href="services.html" class="hover:font-bold">Services</a>
+            <a href="projects.html" class="hover:font-bold">Projects</a>
+            <a href="testimonials.html" class="hover:font-bold">Testimonials</a>
           </div>
+
           
+            <a href="#" class="w-full text-center text-white font-semibold px-6 py-2 bg-primary-dark rounded-lg transition ease-in-out delay-75 hover:transition-all md:w-fit hover:scale-x-110">Lets Talk</a>
+                    
           </div>
         </div>
       </div>
 
       <!-- HERO SECTION -->
-      <section id="hero-section" class="md:flex md:flex-row md:justify-between md:items-center md:px-32 md:py-0 flex flex-col justify-between items-center px-4 py-8 gap-16">
+      <section id="hero-section" class="w-full h-auto flex flex-col justify-between items-center px-4 pt-12 md:pt-24 md:px-8 lg:px-28 md:grid md:grid-cols-2 md:justify-between md:items-stretch">
 
-        <div id="text-and-button-cont" class="md:w-1/2 md:flex md:flex-col md:gap-8 flex flex-col gap-8">
-          <div id="hero-text" class="flex flex-col gap-4">
-            <h1 class="md:font-bold md:text-8xl text-tertiary  md:text-left text-5xl text-center font-bold">Designing Experiences, Not Just Interfaces</h1>
+        <div id="text-and-button-cont" class="w-full h-auto flex flex-col justify-start items-center gap-8 pb-8 ">
 
-            <h3 class="md:font-bold md:text-lg text-primary-dark  md:text-left text-2xl text-center font-bold">I’m Jonathan Joseph Ikpe</h3>
+          <div id="hero-text" class=" w-full h-auto flex flex-col gap-4 ">
+            <h1 class="md:font-bold md:text-6xl text-tertiary lg:text-8xl md:text-left text-5xl text-center font-bold">Designing Experiences, Not Just Interfaces</h1>
+
+            <h3 class="w-full h-auto md:font-bold text-primary-dark  md:text-left text-2xl text-center font-bold">I’m Jonathan Joseph Ikpe</h3>
 
             <p class="md:text-lg text-gray-700 md:text-left text-center text-base">
               a Product Designer & Frontend Developer shaping clean, functional,
@@ -70,27 +86,19 @@
             </p>
           </div>
 
-          <div id="hero-button-cont" class="md:flex md:flex-row md:gap-6 md:justify-start md:items-center flex flex-col gap-6 justify-center items-center">
-            <div id="hero-primary-button" class="bg-primary-dark text-white font-medium px-10 py-4 rounded-lg  hover:px-12 transition ease-in-out delay-75 hover:transition-all md:w-fit w-full text-center">
-              <a href="#">View my works</a>
-            </div>
-
-            <div id="hero-secondary-button" class="bg-white border-2 border-primary-dark text-primary-dark font-medium md:flex md:flex-row px-10 py-4 rounded-lg hover:px-12 transition ease-in-out delay-75 hover:transition-all md:w-fit w-full text-center">
-              <a href="#" class="md:flex md:items-center flex justify-center items-center gap-2"
-                ><img src="/images/icons/message-add.svg" alt="" /> Lets
-                Connect</a
-              >
-            </div>
+          <div id="hero-button-cont" class="w-full h-auto flex flex-col md:flex-row justify-start items-center gap-4">
+            <a href="projects.html" class="primary-button">View my works</a>
+            <a href="#whatsappme" class="secondary-button">Let's Talk</a>
           </div>
         </div>
 
-        <div id="hero-image" class="md:w-1/2">
-          <img src="images/profile_image.png" alt="Jonathan" class="md:w-[800px] md:h-[800px] z-1"/>
+        <div id="hero-image" class="w-full h-auto flex justify-center items-center  xl:h-[600px]">
+          <img src="images/profile_image.png" alt="Jonathan" class="w-full h-full bg-top object-cover"/>
         </div>
       </section>
 
       <!-- SECTION DIVIDER -->
-      <div id="section-divider" class="flex justify-center items-center py-8 bg-primary-dark text-white md:-mt-8  md:z-200 z-200 w-full absolute">
+      <div id="section-divider" class="flex justify-center items-center py-8 bg-primary-dark text-white  md:z-200 z-200 w-full h-auto">
         <div id="scroll-track" class="flex justify-center items-center gap-16 overflow-hidden  whitespace-nowrap space-x-16 group hover:cursor-pointer">
           <ul class="flex gap-16 animate-loop-scroll aria-hidden:true space-x-16 group-hover:paused">
             <li class="flex justify-center items-center gap-6"><img class="w-8 h-8 invert" src="images/icons/star-1.svg" alt="" /> App UI Design</li>
@@ -137,20 +145,42 @@
       </div>
 
       <!-- SERVICES SECTION -->
-      <div id="my-services-section" class="md:w-full md:h-auto md:px-32 md:py-32 md:flex md:gap-6 flex flex-col px-4 py-32 gap-6 border-b-2 border-gray-200">
-      <div id="section-header" class="md:bg-hero md:bg-no-repeat md:bg-cover md:bg-center md:flex md:flex-row md:justify-between md:items-center items-center md:gap-8 flex flex-row gap-4">
+      <div id="my-services-section" class="w-full h-auto px-4 py-8 flex flex-col justify-start items-start gap-4 border-b-2 md:px-8 lg:px-28 md:py-12 lg:py-16 border-gray-200">
+
+      <div id="section-header" class="w-full h-auto flex flex-row justify-between items-start gap-4">
           <h4 class="font-bold text-3xl">My Specification</h4>
 
-          <div id="primary-button" class="md:bg-primary-dark md:text-white md:font-medium px-10 py-4 rounded-lg hover:px-12 transition ease-in-out delay-75 hover:transition-all hidden md:block">
-            <a href="#">View All Services</a>
-          </div>
-        </div>
+          <a href="services.html" class="primary-button w-fit">
+            View All Services
+          </a>
+      </div>
 
         <div id="section-subheader" class="">
           <h2 class="font-bold md:text-5xl text-4xl"><span class="text-tertiary font-sans">Services</span> I Provide</h2>
         </div>
 
-        <div id="services-card-cont" class="md:flex md:flex-row md:gap-6 md:justify-between md:items-center flex flex-col gap-8 justify-start items-start w-full h-auto">
+        <div id="services-card-cont" class="w-full h-auto flex flex-col justify-start items-start gap-4 md:grid md:grid-cols-3 pt-8">
+
+          <div id="services-card" class="bg-slate-100 flex flex-col gap-6 p-6 rounded-[16px] services-card border-l-4 border-primary-dark w-full hover:bg-white hover:shadow-sm transition ease-in-out delay-75 hover:transition-all">
+            <div class="icon-cont w-fit h-auto p-4 bg-white rounded-[50px]">
+              <img src="images/icons/designtools.svg" alt="" />
+            </div>
+
+            <div class="service-card-text-cont flex flex-col gap-4">
+              <h3 class="font-bold font-sans text-2xl">Web Development</h3>
+              <p class="text-gray-700 font-normal text-[18px] font-sans">
+                I create user-friendly interfaces with Figma and modern design
+                systems.
+              </p>
+            </div>
+
+            <div class="link-button-cont flex flex-row items-center gap-2">
+              <a href="#"
+                 class="flex flex-row justify-start items-center gap-2 font-normal text-[18px] hover:italic">Learn more <img src="images/icons/arrow-right.svg" alt=""
+              /></a>
+            </div>
+          </div>
+
           <div id="services-card" class="bg-slate-100 flex flex-col gap-6 p-6 rounded-[16px] services-card border-l-4 border-primary-dark w-full hover:bg-white hover:shadow-sm transition ease-in-out delay-75 hover:transition-all">
             <div class="icon-cont w-fit h-auto p-4 bg-white rounded-[50px]">
               <img src="images/icons/designtools.svg" alt="" />
@@ -171,13 +201,13 @@
             </div>
           </div>
 
-          <div class="bg-slate-100 flex flex-col gap-6 p-6 rounded-[16px] services-card border-l-4 border-primary-dark w-full hover:bg-white hover:shadow-sm transition ease-in-out delay-75 hover:transition-all" >
+          <div id="services-card" class="bg-slate-100 flex flex-col gap-6 p-6 rounded-[16px] services-card border-l-4 border-primary-dark w-full hover:bg-white hover:shadow-sm transition ease-in-out delay-75 hover:transition-all">
             <div class="icon-cont w-fit h-auto p-4 bg-white rounded-[50px]">
-              <img src="images/icons/code-1.svg" alt="" />
+              <img src="images/icons/designtools.svg" alt="" />
             </div>
 
             <div class="service-card-text-cont flex flex-col gap-4">
-              <h3 class="font-bold font-sans text-2xl">UI/UX Design</h3>
+              <h3 class="font-bold font-sans text-2xl">Graphics Design</h3>
               <p class="text-gray-700 font-normal text-[18px] font-sans">
                 I create user-friendly interfaces with Figma and modern design
                 systems.
@@ -186,47 +216,29 @@
 
             <div class="link-button-cont flex flex-row items-center gap-2">
               <a href="#"
-                class="flex flex-row justify-start items-center gap-2 font-normal text-[18px] hover:italic">Learn more <img src="images/icons/arrow-right.svg" alt=""
+                 class="flex flex-row justify-start items-center gap-2 font-normal text-[18px] hover:italic">Learn more <img src="images/icons/arrow-right.svg" alt=""
               /></a>
             </div>
           </div>
 
-          <div class="bg-slate-100 flex flex-col gap-6 p-6 rounded-[16px] services-card border-l-4 border-primary-dark w-full hover:bg-white hover:shadow-sm transition ease-in-out delay-75 hover:transition-all">
-            <div class="icon-cont w-fit h-auto p-4 bg-white rounded-[50px]">
-              <img src="images/icons/hashtag.svg" alt="" />
-            </div>
-
-            <div class="service-card-text-cont flex flex-col gap-4">
-              <h3 class="font-bold font-sans text-2xl">UI/UX Design</h3>
-              <p class="text-gray-700 font-normal text-[18px] font-sans">
-                I create user-friendly interfaces with Figma and modern design
-                systems.
-              </p>
-            </div>
-
-            <div class="link-button-cont">
-              <a href="#"
-                class="flex flex-row justify-start items-center gap-2 font-normal text-[18px] hover:italic">Learn more <img src="images/icons/arrow-right.svg" alt=""
-              /></a>
-            </div>
-          </div>
+          
         </div>
       </div>
 
       <!-- ABOUT SECTION -->
-      <section class="about-section px-4 flex flex-col justify-center items-center gap-4 border-b-2 border-gray-200 py-12 md:px-32 md:py-32 md:flex md:flex-row md:gap-16 md:justify-between md:items-center">
-        <div class="md:image-cont md:w-1/2">
+      <section class="about-section w-full h-auto px-4 py-8 flex flex-col justify-center items-center gap-4 md:px-8 lg:px-28 md:py-12 lg:py-16 md:grid md:grid-cols-2 border-b-2 border-gray-200">
+        <div class="md:image-cont w-full h-auto">
           <img src="images/about_me.png" alt="" class="w-full h-full"/>
         </div>
 
-        <div class="about-text-cont md:w-1/2 md:flex md:flex-col  gap-6 md:gap-8 flex flex-col justify-center items-center w-full h-auto md:justify-start md:items-start">
+        <div class="about-text-cont md:flex md:flex-col  gap-6 md:gap-8 flex flex-col justify-center items-center w-full h-auto md:justify-start md:items-start">
           <div class="about-header">
-            <h5 class="font-bold text-2xl font-sans text-primary-dark text-center md:text-left md:text-3xl">About Me</h5>
+            <h5 class="font-bold text-2xl font-sans text-primary-dark text-center md:text-left md:text-2xl">About Me</h5>
           </div>
 
           <div class="about-text-details-cont font-sans flex flex-col gap-4 md:text-left text-center md:gap-8">
-            <h3 class="font-bold text-4xl text-center md:text-left md:text-5xl">I bring ideas to life with design & code</h3>
-            <p class="text-center text-gray-700 text-[20px] md:text-left md:text-[24px]">
+            <h3 class="font-bold text-4xl text-center md:text-left md:text-3xl">I bring ideas to life with design & code</h3>
+            <p class="text-center text-gray-700 text-[20px] md:text-left md:text-[16px]">
               I’m Jonathan Joseph Ikpe, a Product Designer and Frontend
               Developer passionate about building seamless digital experiences.
               With a background in visual design, teaching, and product
@@ -238,23 +250,22 @@
             </p>
           </div>
 
-          <div class="primary-button bg-primary-dark text-white font-medium px-10 py-4 rounded-lg hover:px-12 transition ease-in-out delay-75 hover:transition-all w-full text-center md:w-fit md:h-auto md:text-left">
-            <a href="#">Download CV </a>
-          </div>
-        </div>
+          <a href="#" class="primary-button ">
+            Download CV 
+          </a>
+       
       </section>
 
       <!-- TOOLS SECTION -->
-      <section class="my-fav-tools-section w-full h-auto flex flex-col justify-center items-center gap-12 px-4 py-20 md:w-full md:h-auto md:flex md:flex-col md:gap-20">
+      <section class="my-fav-tools-section w-full h-auto flex flex-col justify-center items-center gap-12 px-4 py-20 md:px-8 lg:px-28 md:py-12 lg:py-16">
         <div class="section-header-center flex flex-col justify-center items-center gap-6">
           <h4 class="font-bold text-2xl md:text-4xl">My Favourite Tools</h4>
 
           <h2 class="font-bold text-4xl text-center w-[60%]"><span class="text-tertiary">Exploring the Tools</span> Behind My Designs</h2>
         </div>
 
-        <div class="tools-cards-cont w-full h-auto flex flex-col justify-start items-start gap-8">
-          <div class="tools-cards-row w-full h-auto flex flex-col justify-start items-start gap-4 md:flex-row md:justify-between md:px-32">
-            <div class="tool-card p-4 bg-slate-50 w-full h-auto flex flex-col justify-start items-end gap-20 rounded-[24px] border-l-4 border-primary-dark hover:bg-white hover:shadow-sm transition ease-out delay-75 hover:transition-all">
+        <div class="tools-cards-cont w-full h-auto flex flex-col justify-start items-start gap-8 md:grid md:grid-cols-3">
+          <div class="tool-card p-4 bg-slate-50 w-full h-auto flex flex-col justify-start items-end gap-4 rounded-[24px] border-l-4 border-primary-dark hover:bg-white hover:shadow-sm transition ease-out delay-75 hover:transition-all">
               <div class="percentage bg-primary-dark p-4 rounded-full w-fit">
                 <p class="font-bold text-white text-[18px]">98%</p>
               </div>
@@ -271,127 +282,12 @@
               </div>
             </div>
 
-            <div class="tool-card p-4 bg-slate-50 w-full h-auto flex flex-col justify-start items-end gap-20 rounded-[24px] border-l-4 border-primary-dark hover:bg-white hover:shadow-sm transition ease-out delay-75 hover:transition-all">
-              <div class="percentage bg-primary-dark p-4 rounded-full w-fit">
-                <p class="font-bold text-white text-[18px]">88%</p>
-              </div>
-
-              <div class="tool-icon-and-name w-full h-auto flex flex-row justify-start items-center gap-8">
-                <div class="tool-icon-cont bg-white p-4 rounded-full">
-                  <img src="images/icons/skill-icons_css.svg" alt="" class="w-[32px] h-[32px]"/>
-                </div>
-
-                <h3 class="text-3xl font-medium">CSS</h3>
-              </div>
-            </div>
-
-            <div class="tool-card p-4 bg-slate-50 w-full h-auto flex flex-col justify-start items-end gap-20 rounded-[24px] border-l-4 border-primary-dark hover:bg-white hover:shadow-sm transition ease-out delay-75 hover:transition-all">
-              <div class="percentage bg-primary-dark p-4 rounded-full w-fit">
-                <p class="font-bold text-white text-[18px]">60%</p>
-              </div>
-
-              <div class="tool-icon-and-name w-full h-auto flex flex-row justify-start items-center gap-8">
-                <div class="tool-icon-cont bg-white p-4 rounded-full">
-                  <img src="images/icons/skill-icons_javascript.svg" alt="" class="w-[32px] h-[32px]"/>
-                </div>
-
-                <h3 class="text-3xl font-medium">JavaScript</h3>
-              </div>
-            </div>
-          </div>
-
-          <div class="tools-cards-row w-full h-auto flex flex-col justify-start items-start gap-4 md:flex-row md:justify-between md:px-32">
-            <div class="tool-card p-4 bg-slate-50 w-full h-auto flex flex-col justify-start items-end gap-20 rounded-[24px] border-l-4 border-primary-dark hover:bg-white hover:shadow-sm transition ease-out delay-75 hover:transition-all">
-              <div class="percentage bg-primary-dark p-4 rounded-full w-fit">
-                <p class="font-bold text-white text-[18px]">90%</p>
-              </div>
-
-              <div class="tool-icon-and-name w-full h-auto flex flex-row justify-start items-center gap-8">
-                <div class="tool-icon-cont bg-white p-4 rounded-full">
-                  <img src="images/icons/logos_figma.svg" alt="" class="w-[32px] h-[32px]"/>
-                </div>
-
-                <h3 class="text-3xl font-medium">Figma</h3>
-              </div>
-            </div>
-
-            <div class="tool-card p-4 bg-slate-50 w-full h-auto flex flex-col justify-start items-end gap-20 rounded-[24px] border-l-4 border-primary-dark hover:bg-white hover:shadow-sm transition ease-out delay-75 hover:transition-all">
-              <div class="percentage bg-primary-dark p-4 rounded-full w-fit">
-                <p class="font-bold text-white text-[18px]">98%</p>
-              </div>
-
-              <div class="tool-icon-and-name w-full h-auto flex flex-row justify-start items-center gap-8">
-                <div class="tool-icon-cont bg-white p-4 rounded-full">
-                  <img src="images/icons/ic_round-wordpress.svg" alt="" class="w-[32px] h-[32px]" />
-                </div>
-
-                <h3 class="text-3xl font-medium">WordPress</h3>
-              </div>
-            </div>
-
-            <div class="tool-card p-4 bg-slate-50 w-full h-auto flex flex-col justify-start items-end gap-20 rounded-[24px] border-l-4 border-primary-dark hover:bg-white hover:shadow-sm transition ease-out delay-75 hover:transition-all">
-              <div class="percentage bg-primary-dark p-4 rounded-full w-fit">
-                <p class="font-bold text-white text-[18px]">90%</p>
-              </div>
-
-              <div class="tool-icon-and-name w-full h-auto flex flex-row justify-start items-center gap-8">
-                <div class="tool-icon-cont bg-white p-4 rounded-full">
-                  <img src="images/icons/devicon_canva.svg" alt="" class="w-[32px] h-[32px]"/>
-                </div>
-
-                <h3 class="text-3xl font-medium">JavaScript</h3>
-              </div>
-            </div>
-          </div>
-
-          <div class="tools-cards-row w-full h-auto flex flex-col justify-start items-start gap-4 md:flex-row md:justify-between md:px-32">
-            <div class="tool-card p-4 bg-slate-50 w-full h-auto flex flex-col justify-start items-end gap-20 rounded-[24px] border-l-4 border-primary-dark hover:bg-white hover:shadow-sm transition ease-out delay-75 hover:transition-all">
-              <div class="percentage bg-primary-dark p-4 rounded-full w-fit">
-                <p class="font-bold text-white text-[18px]">90%</p>
-              </div>
-
-              <div class="tool-icon-and-name w-full h-auto flex flex-row justify-start items-center gap-8">
-                <div class="tool-icon-cont bg-white p-4 rounded-full">
-                  <img src="images/icons/logos_adobe-indesign.svg" alt="" class="w-[32px] h-[32px]"/>
-                </div>
-
-                <h3 class="text-3xl font-medium">Indesign</h3>
-              </div>
-            </div>
-
-            <div class="tool-card p-4 bg-slate-50 w-full h-auto flex flex-col justify-start items-end gap-20 rounded-[24px] border-l-4 border-primary-dark hover:bg-white hover:shadow-sm transition ease-out delay-75 hover:transition-all">
-              <div class="percentage bg-primary-dark p-4 rounded-full w-fit">
-                <p class="font-bold text-white text-[18px]">84%</p>
-              </div>
-
-              <div class="tool-icon-and-name w-full h-auto flex flex-row justify-start items-center gap-8">
-                <div class="tool-icon-cont bg-white p-4 rounded-full">
-                  <img src="images/icons/skill-icons_photoshop.svg" alt="" class="w-[32px] h-[32px]"/>
-                </div>
-
-                <h3 class="text-3xl font-medium">Photoshop</h3>
-              </div>
-            </div>
-
-            <div class="tool-card p-4 bg-slate-50 w-full h-auto flex flex-col justify-start items-end gap-20 rounded-[24px] border-l-4 border-primary-dark hover:bg-white hover:shadow-sm transition ease-out delay-75 hover:transition-all">
-              <div class="percentage bg-primary-dark p-4 rounded-full w-fit">
-                <p class="font-bold text-white text-[18px]">60%</p>
-              </div>
-
-              <div class="tool-icon-and-name w-full h-auto flex flex-row justify-start items-center gap-8">
-                <div class="tool-icon-cont bg-white p-4 rounded-full">
-                  <img src="images/icons/logos_adobe-illustrator.svg" alt="" class="w-[32px] h-[32px]"/>
-                </div>
-
-                <h3 class="text-3xl font-medium">Illustrator</h3>
-              </div>
-            </div>
-          </div>
+          
         </div>
       </section>
 
       <!-- SECTION DIVIDER -->
-      <div id="section-divider" class="flex justify-center items-center py-8 bg-primary-dark text-white -mt-9 z-20 absolute w-full">
+      <div id="section-divider" class="flex justify-center items-center py-8 bg-primary-dark text-white w-full">
         <div id="scroll-track" class="flex justify-center items-center gap-16 overflow-hidden  whitespace-nowrap space-x-16 group hover:cursor-pointer">
           <ul class="flex gap-16 animate-loop-scroll aria-hidden:true space-x-16 group-hover:paused">
             <li class="flex justify-center items-center gap-6"><img class="w-8 h-8 invert" src="images/icons/star-1.svg" alt="" /> App UI Design</li>
@@ -438,40 +334,39 @@
       </div>
 
       <!-- PORTFOLIO SECTION -->
-      <section class="porfolio-section px-4 py-32 flex flex-col justify-start items-start gap-8 md:px-32 md:py-32">
+      <section class="porfolio-section w-full h-auto flex flex-col justify-center items-center gap-8 px-4 py-12 md:px-8 md:py-16 lg:px-28">
+
         <div class="section-header-left w-full h-auto flex flex-col justify-center items-center gap-6 md:flex md:flex-row md:justify-between md:items-center">
           <div class="section-heading-group w-full h-auto flex flex-col justify-center items-center gap-6 md:w-fit md:justify-start md:items-start">
             <h4 class="text-2xl font-bold font-sans">My Portfolio</h4>
             <h2 class="text-4xl font-bold md:text-4xl">Let's Have a look at <span class="text-tertiary">My Portfolio</span></h2>
           </div>
 
-          <div class="primary-button bg-primary-dark font-medium text-white px-8 py-4 w-full text-center rounded-lg hover:px-16 md:w-fit transition ease-out delay-75 hover:transition-all">
-            <a href="#">View All Projects</a>
-          </div>
+          <a href="projects.html" class="primary-button">View All</a>
         </div>
 
         <div class="projects-cards-container w-full h-auto flex flex-col justify-start items-start gap-8">
-          <div class="project-card w-full h-auto flex flex-col justify-start items-start gap-8 bg-slate-100 rounded-[24px] p-4 hover:bg-white hover:shadow-sm border-l-4 border-primary-dark md:flex md:flex-row md:justify-between md:items-center">
-            <img class="w-full md:w-1/2 md:h-[500px] object-cover rounded-lg" src="images/porfolio_image.png" alt="porfolio_image" />
+          <div class="project-card w-full h-auto flex flex-col justify-start items-stretch gap-8 bg-slate-100 rounded-[24px] p-4 hover:bg-white hover:shadow-sm border-l-4 border-primary-dark md:grid md:grid-cols-2 md:justify-between md:items-center">
+            <img class="w-full h-48 object-cover rounded-lg md:h-full" src="images/porfolio_image.png" alt="porfolio_image" />
 
-            <div class="project-card-right w-full h-auto flex flex-col justify-start items-start gap-4 md:w-1/2 md:justify-between md:gap-12">
+            <div class="project-card-right w-full h-auto flex flex-col justify-start items-start gap-4  md:justify-between md:gap-12">
               <div class="tags-container w-full h-auto flex flex-row justify-start items-center gap-4">
-                <div class="tag w-fit h-auto bg-tertiary p-4 rounded-[24px]">
+                <div class="tag w-fit h-auto bg-tertiary px-6 py-1 rounded-[24px]">
                   <p class="font-medium text-sm text-gray-800">UI/UX</p>
                 </div>
 
-                <div class="tag w-fit h-auto bg-tertiary p-4 rounded-[24px]">
+                <div class="tag w-fit h-auto bg-tertiary px-6 py-1 rounded-[24px]">
                   <p class="font-medium text-sm text-gray-800">Design System</p>
                 </div>
 
-                <div class="tag w-fit h-auto bg-tertiary p-4 rounded-[24px]">
+                <div class="tag w-fit h-auto bg-tertiary px-6 py-1 rounded-[24px]">
                   <p class="font-medium text-sm text-gray-800">Figma</p>
                 </div>
               </div>
 
               <div class="project-text-cont w-full h-auto flex flex-col justify-start items-start gap-3">
-                <h2 class="font-bold text-4xl text-primary-dark">WUJUPE Dashboard Design</h2>
-                <p class="text-2xl">
+                <h2 class="font-bold text-2xl text-primary-dark md:text-3xl">WUJUPE Dashboard Design</h2>
+                <p class="text-base">
                   A clean and efficient dashboard UI designed for a financial
                   platform, focusing on usability, responsive design, and system
                   consistency.
@@ -487,25 +382,26 @@
             </div>
           </div>
 
-          <div class="project-card w-full h-auto flex flex-col justify-start items-start gap-8 bg-slate-100 rounded-[24px] p-4 hover:bg-white hover:shadow-sm border-l-4 border-primary-dark md:flex md:flex-row md:justify-between md:items-center">
-            <div class="project-card-right w-full h-auto flex flex-col justify-start items-start gap-4 md:w-1/2 md:justify-between md:gap-12">
+          <div class="project-card w-full h-auto flex flex-col justify-start items-start gap-8 bg-slate-100 rounded-[24px] p-4 hover:bg-white hover:shadow-sm border-l-4 border-primary-dark md:grid md:grid-cols-2 md:justify-between md:items-center">
+
+            <div class="project-card-right w-full h-auto flex flex-col justify-start items-start gap-4  md:justify-between md:gap-12">
               <div class="tags-container w-full h-auto flex flex-row justify-start items-center gap-4">
-                <div class="tag w-fit h-auto bg-tertiary p-4 rounded-[24px]">
+                <div class="tag w-fit h-auto bg-tertiary px-6 py-1 rounded-[24px]">
                   <p class="font-medium text-sm text-gray-800">UI/UX</p>
                 </div>
 
-                <div class="tag w-fit h-auto bg-tertiary p-4 rounded-[24px]">
+                <div class="tag w-fit h-auto bg-tertiary px-6 py-1 rounded-[24px]">
                   <p class="font-medium text-sm text-gray-800">Design System</p>
                 </div>
 
-                <div class="tag w-fit h-auto bg-tertiary p-4 rounded-[24px]">
+                <div class="tag w-fit h-auto bg-tertiary px-6 py-1 rounded-[24px]">
                   <p class="font-medium text-sm text-gray-800">Figma</p>
                 </div>
               </div>
 
               <div class="project-text-cont w-full h-auto flex flex-col justify-start items-start gap-3">
-                <h2 class="font-bold text-4xl text-primary-dark">WUJUPE Dashboard Design</h2>
-                <p class="text-2xl">
+                <h2 class="font-bold text-2xl text-primary-dark md:text-3xl">WUJUPE Dashboard Design</h2>
+                <p class="text-base">
                   A clean and efficient dashboard UI designed for a financial
                   platform, focusing on usability, responsive design, and system
                   consistency.
@@ -520,13 +416,13 @@
               </div>
             </div>
 
-            <img class="w-full md:w-1/2 md:h-[500px] object-cover rounded-lg" src="images/porfolio_image.png" alt="porfolio_image" />
+            <img class="w-full h-40 object-cover rounded-lg md:h-full" src="images/porfolio_image.png" alt="porfolio_image" />
           </div>
         </div>
       </section>
 
       <!-- SECTION DIVIDER -->
-      <div id="section-divider" class="flex justify-center items-center py-8 bg-primary-dark text-white -mt-9 z-20 absolute w-full">
+      <div id="section-divider" class="flex justify-center items-center py-8 bg-primary-dark text-white   w-full">
         <div id="scroll-track" class="flex justify-center items-center gap-16 overflow-hidden  whitespace-nowrap space-x-16 group hover:cursor-pointer">
           <ul class="flex gap-16 animate-loop-scroll aria-hidden:true space-x-16 group-hover:paused">
             <li class="flex justify-center items-center gap-6"><img class="w-8 h-8 invert" src="images/icons/star-1.svg" alt="" /> App UI Design</li>
@@ -573,18 +469,20 @@
       </div>
 
       <!-- EDUCATION SECTION -->
-      <section class="education-and-professional-section w-full h-auto px-4 py-32 flex flex-col justify-start items-start gap-12 md:px-32">
+      <section class="education-and-professional-section w-full h-auto flex flex-col justify-center items-center gap-12 px-4 py-12 md:py-16 md:px-8 lg:py-16 lg:px-28 border-b border-slate-200">
         <div class="section-header-center w-full h-auto flex flex-col justify-center items-center gap-4 font-bold">
-          <h4 class="text-3xl font-sans md:4xl">Education & Work</h4>
-          <h2 class="font-bold text-4xl md:text-6xl md:text-center">My <span class="text-tertiary">Academic & Professional </span>Journey</h2>
+          <h4 class=" w-full h-auto text-primary-dark text-2xl font-sans md:text-start">Education & Work</h4>
+          <h2 class=" w-full h-auto text-primary-dark font-sans font-bold text-3xl md:text-4xl md:text-start">My <span class="text-tertiary">Academic & Professional </span>Journey</h2>
         </div>
 
-        <div class="edu-and-pro-card-cont w-full h-full flex flex-col justify-center items-start gap-6 md:flex-row md:justify-between md:items-start md:gap-4">
+        <div class="edu-and-pro-card-cont w-full h-full flex flex-col justify-center items-start gap-6 md:grid md:grid-cols-2 md:justify-between md:items-start md:gap-4">
+
           <div class="edu-and-pro-card w-full h-auto bg-slate-50 p-8 rounded-xl border-l-4 border-primary-dark hover:bg-white cursor-pointer hover:shadow-sm flex flex-col justify-start items-start gap-4">
+            
             <div class="card-head border-b py-4 flex flex-row justify-start items-center gap-4 w-full">
               <img
                 src="images/icons/stash_graduation-cap-light.svg"
-                alt="stash_graduation-cap-light" class="w-[200px] bg-white p-6 rounded-full"
+                alt="stash_graduation-cap-light" class="   bg-white p-6 rounded-full"
               />
 
               <h3 class="font-bold text-2xl text-primary-dark font-sans">Education</h3>
@@ -593,33 +491,33 @@
             <div class="history w-full h-auto flex flex-col justify-start items-start gap-4">
               <div class="edu-history w-full h-auto flex flex-row justify-between items-center">
                 <div class="edu-details-text w-fit h-auto flex flex-col justify-start items-start gap-2">
-                  <h4 class="font-bold text-2xl font-sans">National Open University</h4>
+                  <h4 class="font-bold text-lg font-sans">National Open University</h4>
                   <p class="font-sans text-lg italic">Msc. Mass Communication</p>
                 </div>
 
-                <div class="tag bg-tertiary p-3 rounded-xl">
+                <div class="tag bg-tertiary px-4 py-1 rounded-xl">
                   <p class="font-medium">In view</p>
                 </div>
               </div>
 
               <div class="edu-history w-full h-auto flex flex-row justify-between items-center">
                 <div class="edu-details-text w-fit h-auto flex flex-col justify-start items-start gap-2">
-                  <h4 class="font-bold text-2xl font-sans">Benue State University</h4>
+                  <h4 class="font-bold text-lg font-sans">Benue State University</h4>
                   <p class="font-sans text-lg italic">Bsc. Mass Communication</p>
                 </div>
 
-                <div class="tag  bg-tertiary p-3 rounded-xl">
+                <div class="tag  bg-tertiary px-4 py-1 rounded-xl">
                   <p class="font-medium">2014 - 2018</p>
                 </div>
               </div>
 
               <div class="edu-history w-full h-auto flex flex-row justify-between items-center">
                 <div class="edu-details-text w-fit h-auto flex flex-col justify-start items-start gap-2">
-                  <h4 class="font-bold text-2xl font-sans">Newton National Collage</h4>
+                  <h4 class="font-bold text-lg font-sans">Newton National Collage</h4>
                   <p class="font-sans text-lg italic">Senior Secondary School</p>
                 </div>
 
-                <div class="tag  bg-tertiary p-3 rounded-xl">
+                <div class="tag  bg-tertiary px-4 py-1 rounded-xl">
                   <p class="font-medium">2004 - 2009</p>
                 </div>
               </div>
@@ -627,8 +525,9 @@
           </div>
 
           <div class="edu-and-pro-card w-full h-auto bg-slate-50 p-8 rounded-xl border-l-4 border-primary-dark hover:bg-white cursor-pointer hover:shadow-sm flex flex-col justify-start items-start gap-4">
+
             <div class="card-head border-b py-4 flex flex-row justify-start items-center gap-4 w-full">
-              <img src="images/icons/briefcase.svg"  class="w-[300px] bg-white p-6 rounded-full"/>
+              <img src="images/icons/briefcase.svg"  class=" bg-white p-6 rounded-full"/>
 
               <h3 class="font-bold text-2xl text-primary-dark font-sans">Work Experience</h3>
             </div>
@@ -636,66 +535,66 @@
             <div class="history w-full h-auto flex flex-col justify-start items-start gap-4">
               <div class="edu-history w-full h-auto flex flex-row justify-between items-center">
                 <div class="edu-details-text w-fit h-auto flex flex-col justify-start items-start gap-2">
-                  <h4 class="font-bold text-2xl font-sans">Nile University of Nigeria</h4>
-                  <p class="font-sans text-lg italic">Public Relations & Advert Technologist</p>
+                  <h4 class="font-bold text-lg font-sans">Nile University of Nigeria</h4>
+                  <p class="font-sans text-base italic">Public Relations & Advert Technologist</p>
                 </div>
 
-                <div class="tag  bg-tertiary p-3 rounded-xl">
+                <div class="tag  bg-tertiary px-4 py-1 rounded-xl">
                   <p class="font-medium">2021 - Till Date</p>
                 </div>
               </div>
 
               <div class="edu-history w-full h-auto flex flex-row justify-between items-center">
                 <div class="edu-details-text w-fit h-auto flex flex-col justify-start items-start gap-2">
-                  <h4 class="font-bold text-2xl font-sans">Wujupe</h4>
-                  <p class="font-sans text-lg italic">UI Designer</p>
+                  <h4 class="font-bold text-lg font-sans">Wujupe</h4>
+                  <p class="font-sans text-base italic">UI Designer</p>
                 </div>
 
-                <div class="tag  bg-tertiary p-3 rounded-xl">
+                <div class="tag  bg-tertiary px-4 py-1 rounded-xl">
                   <p class="font-medium">2024 - 2025</p>
                 </div>
               </div>
 
               <div class="edu-history w-full h-auto flex flex-row justify-between items-center">
                 <div class="edu-details-text w-fit h-auto flex flex-col justify-start items-start gap-2">
-                  <h4 class="font-bold text-2xl font-sans">Jeriod LTD</h4>
-                  <p class="font-sans text-lg italic">Lead Product Designer</p>
+                  <h4 class="font-bold text-lg font-sans">Jeriod LTD</h4>
+                  <p class="font-sans text-base italic">Lead Product Designer</p>
                 </div>
 
-                <div class="tag  bg-tertiary p-3 rounded-xl">
+                <div class="tag  bg-tertiary px-4 py-1 rounded-xl">
                   <p class="font-medium">2024 - 2025</p>
                 </div>
               </div>
 
               <div class="edu-history w-full h-auto flex flex-row justify-between items-center">
                 <div class="edu-details-text w-fit h-auto flex flex-col justify-start items-start gap-2">
-                  <h4 class="font-bold text-2xl font-sans">TagAlong LTD</h4>
-                  <p class="font-sans text-lg italic">UI Designer</p>
+                  <h4 class="font-bold text-lg font-sans">TagAlong LTD</h4>
+                  <p class="font-sans text-base italic">UI Designer</p>
                 </div>
 
-                <div class="tag  bg-tertiary p-3 rounded-xl">
+                <div class="tag  bg-tertiary px-4 py-1 rounded-xl">
                   <p class="font-medium">2022 - 2023</p>
                 </div>
               </div>
 
               <div class="edu-history w-full h-auto flex flex-row justify-between items-center">
                 <div class="edu-details-text w-fit h-auto flex flex-col justify-start items-start gap-2">
-                  <h4 class="font-bold text-2xl font-sans">Applied Logic</h4>
-                  <p class="font-sans text-lg italic">Data analyst & Web Manager</p>
+                  <h4 class="font-bold text-lg font-sans">Applied Logic</h4>
+                  <p class="font-sans text-base italic">Data analyst & Web Manager</p>
                 </div>
 
-                <div class="tag  bg-tertiary p-3 rounded-xl">
+                <div class="tag  bg-tertiary px-4 py-1 rounded-xl">
                   <p class="font-medium">2020 - 2021</p>
                 </div>
               </div>
 
               <div class="edu-history w-full h-auto flex flex-row justify-between items-center">
                 <div class="edu-details-text w-fit h-auto flex flex-col justify-start items-start gap-2">
-                  <h4 class="font-bold text-2xl font-sans">Tripple Essentials</h4>
-                  <p class="font-sans text-lg italic">Web and Social Media Manager</p>
+                  <h4 class="font-bold text-lg font-sans">Tripple Essentials</h4>
+                  <p class="font-sans text-base italic">Web and Social Media Manager</p>
                 </div>
 
-                <div class="tag  bg-tertiary p-3 rounded-xl">
+                <div class="tag  bg-tertiary px-4 py-1 rounded-xl">
                   <p class="font-medium">2019 - 2020</p>
                 </div>
               </div>
@@ -705,8 +604,8 @@
       </section>
 
       <!-- RATES SECTION -->
-      <section class="rates-section w-full h-auto px-4 py-8 flex flex-col justify-start items-start gap-8 md:px-32">
-        <div class="section-header-left rates w-full h-auto flex flex-col justify-center items-center gap-6 py-4 md:flex md:flex-row md:justify-between md:items-center">
+      <section class="rates-section w-full h-auto flex flex-col justify-center items-center gap-8 px-4 py-12 md:px-8 lg:px-28 border-b-2">
+        <div class="section-header-left-rates w-full h-auto flex flex-col justify-center items-center gap-6 py-4 md:flex md:flex-row md:justify-between md:items-center">
           <div class="section-heading-group w-full h-auto flex flex-col justify-center items-center gap-6 md:w-fit md:justify-start md:items-start">
             <h4 class="font-bold text-2xl md:text-4xl">Pricing Table</h4>
             <h2 class="font-bold text-3xl md:text-6xl">My <span class="text-tertiary">Rates</span></h2>
@@ -715,8 +614,9 @@
           <div class="primary-button bg-primary-dark px-8 py-4 text-white font-medium cursor-pointer md:block rounded-lg hover:transition-all md:delay-75 md:ease-out hover:px-12 hidden">Get Started</div>
         </div>
 
-        <div class="rate-card-cont w-full h-auto flex flex-col justify-start items-start gap-8 md:flex-row md:justify-center md:items-start md:gap-6">
-          <div class="rate-card flex flex-col bg-slate-50 p-6 rounded-[24px] border-l-4 border-primary-dark gap-8 md:gap-8 hover:bg-white hover:shadow-sm transition ease-out delay-75 hover:transition-all md:w-1/3">
+        <div class="rate-card-cont w-full h-auto flex flex-row overflow-x-auto scroll-smooth justify-start items-stretch gap-8 lg:overflow-x-hidden lg:grid lg:grid-cols-3">
+          
+          <div class="rate-card min-w-[70%] snap-center flex flex-col bg-slate-50 p-6 rounded-[24px] border-l-4 border-primary-dark gap-8 md:gap-8 hover:bg-white hover:shadow-sm transition ease-out delay-75 hover:transition-all md:min-w-[40%] lg:w-full">
             
             <div class="rate-card-head bg-primary-dark text-white p-8 rounded-[24px] flex flex-col justify-start items-start gap-4">
               <div class="rate-title-and-icon-cont w-full h-auto flex flex-row justify-between items-center gap-4 ">
@@ -787,12 +687,10 @@
               </div>
             </div>
 
-            <div class="primary-button w-full h-auto bg-primary-dark px-8 py-4 text-white font-medium cursor-pointer rounded-lg hover:transition-all ease-out delay-75 hover:px-12 md:w-fit text-center">
-              <a href="#">Get Started</a>
-            </div>
+            <a href="#contact" class="primary-button">Book now</a>
           </div>
 
-          <div class="rate-card active rate-card flex flex-col bg-slate-50 p-6 rounded-[24px] border-l-4 border-primary-dark gap-8 md:gap-8 hover:bg-white hover:shadow-sm transition ease-out delay-75 hover:transition-all md:w-1/3">
+          <div class="rate-card min-w-[70%] snap-center rate-card flex flex-col bg-slate-50 p-6 rounded-[24px] border-l-4 border-primary-dark gap-8 md:gap-8 hover:bg-white hover:shadow-sm transition ease-out delay-75 hover:transition-all md:min-w-[40%] lg:w-full">
             <div class="rate-card-head bg-primary-dark text-white p-8 rounded-[24px] flex flex-col justify-start items-start gap-4">
               <div class="rate-title-and-icon-cont w-full h-auto flex flex-row justify-between items-center gap-4">
                 <h3 class="font-bold text-3xl">Professional</h3>
@@ -862,12 +760,10 @@
               </div>
             </div>
 
-            <div class="primary-button w-full h-auto bg-primary-dark px-8 py-4 text-white font-medium cursor-pointer rounded-lg hover:transition-all ease-out delay-75 hover:px-12 md:w-fit text-center">
-              <a href="#">Book Project</a>
-            </div>
+            <a href="#contact" class="primary-button">Book now</a>
           </div>
 
-          <div class="rate-card flex flex-col bg-slate-50 p-6 rounded-[24px] border-l-4 border-primary-dark gap-8 md:gap-8 hover:bg-white hover:shadow-sm transition ease-out delay-75 hover:transition-all md:w-1/3">
+          <div class="rate-card min-w-[70%] flex flex-col bg-slate-50 p-6 rounded-[24px] border-l-4 border-primary-dark gap-8 md:gap-8 hover:bg-white hover:shadow-sm transition ease-out delay-75 hover:transition-all md:min-w-[40%] lg:w-full">
             <div class="rate-card-head bg-primary-dark text-white p-8 rounded-[24px] flex flex-col justify-start items-start gap-4">
               <div class="rate-title-and-icon-cont w-full h-auto flex flex-row justify-between items-center gap-4">
                 <h3 class="font-bold text-3xl">Premium</h3>
@@ -937,23 +833,25 @@
               </div>
             </div>
 
-            <div class="primary-button w-full h-auto bg-primary-dark px-8 py-4 text-white font-medium cursor-pointer rounded-lg hover:transition-all ease-out delay-75 hover:px-12 md:w-fit text-center">
-              <a href="#">Work with Me</a>
-            </div>
+            <a href="#contact" class="primary-button">Book now</a>
           </div>
         </div>
       </section>
 
       <!-- CONTACT SECTION -->
-      <section class="contact-me-section w-full h-auto px-4 py-8 flex flex-col justify-start items-start gap-4 md:px-32">
-        <div class="section-header-center contact-bg w-full h-auto flex flex-col justify-center items-center gap-4 font-bold">
+      <section class="contact-me-section w-full h-auto flex flex-col justify-start items-center gap-8 px-4 py-12 md:py-24 md:px-8 lg:px-28">
+
+        <div class="section-header-center  w-full h-auto flex flex-col justify-center items-center gap-4 font-bold">
           <h4 class="w-fit font-bold text-2xl text-primary-dark md:text-3xl">Contact Me</h4>
-          <h2 class="w-fit font-bold text-4xl text-primary-dark md:text-5xl">Let's Talk for <span class="text-tertiary">Your Next Project</span></h2>
+          <h2 class="w-fit font-bold text-3xl text-primary-dark md:text-4xl">Let's Talk for <span class="text-tertiary">Your Next Project</span></h2>
         </div>
 
-        <div class="contact-form-and-card-section w-full h-auto flex flex-col justify-start items-start gap-8 p-10 md:flex-row md:justify-between md:items-start md:gap-12">
-          <div class="contact-form w-full h-auto bg-slate-50 p-8 rounded-[24px] border-l-4 border-primary-dark md:w-2/3">
-            <form action="#" class="w-full h-auto flex flex-col justify-start items-start gap-6">
+        <div class="contact-form-and-card-section w-full h-auto flex flex-col justify-start items-start gap-4 md:grid md:grid-cols-[70%_30%] md:justify-between md:items-start md:gap-4">
+
+          <div class="contact-form w-full h-auto bg-slate-50 p-6 rounded-[24px] border-l-4 border-primary-dark ">
+
+            <form action="#" class="w-full h-auto flex flex-col justify-start items-start gap-4">
+
               <div class="name-and-email w-full h-auto flex flex-col justify-start items-start gap-4 md:flex-row md:justify-start md:items-center">
                 <div class="name-group w-full flex flex-col justify-start items-start gap-2 md:w-1/2">
                   <label for="name" class="font-normal">Your name</label>
@@ -1040,34 +938,34 @@
                 ></textarea>
               </div>
 
-              <div class="submit-button w-full h-auto bg-primary-dark px-8 py-4 text-white font-medium cursor-pointer rounded-lg hover:transition-all ease-out delay-75 hover:px-12 md:w-fit text-center">
+              <div class="submit-button w-full h-auto bg-primary-dark px-8 py-2 text-white font-medium cursor-pointer rounded-lg hover:transition-all ease-out delay-75 hover:px-12 md:w-fit text-center">
                 <button>Submit</button>
               </div>
             </form>
           </div>
 
-          <div class="contact-card w-full h-auto bg-slate-50 rounded-[24px] border-l-4 border-primary-dark flex flex-col justify-start items-start gap-8 md:w-1/3 overflow-hidden">
-            <div class="contact-details w-full h-auto flex flex-col justify-start items-start gap-6 p-8">
+          <div class="contact-card w-full h-auto bg-slate-50 rounded-[24px] border-l-4 border-primary-dark flex flex-col justify-start items-start gap-4  overflow-hidden">
+            <div class="contact-details w-full h-auto flex flex-col justify-start items-start gap-4 p-4">
               <div class="detail w-full h-auto flex flex-col justify-start items-start gap-2">
-                <h3 class="font-sans font-bold text-2xl text-tertiary">Address</h3>
+                <h3 class="font-sans font-bold text-lg text-tertiary">Address</h3>
                 <p class="font-medium text-primary-dark">29 Durban Street Wuse II, Abuja</p>
               </div>
 
               <div class="detail w-full h-auto flex flex-col justify-start items-start gap-2">
-                <h3 class="font-sans font-bold text-2xl text-tertiary">Contact</h3>
+                <h3 class="font-sans font-bold text-lg text-tertiary">Contact</h3>
                 <p class="font-medium text-primary-dark">Phone: +234 7056 0081 57</p>
                 <p class="font-medium text-primary-dark">Email: ikpejonathanjoseph@gmail.com</p>
               </div>
 
               <div class="detail w-full h-auto flex flex-col justify-start items-start gap-2">
-                <h3 class="font-sans font-bold text-2xl text-tertiary">Time</h3>
+                <h3 class="font-sans font-bold text-lg text-tertiary">Time</h3>
                 <p class="font-medium text-primary-dark">Monday - Friday: 9:00 - 18:00</p>
                 <p class="font-medium text-primary-dark">Saturday: 9:00 - 16:00</p>
               </div>
             </div>
 
             <div class="socials-container w-full h-auto flex flex-col justify-start items-start gap-4 bg-primary-dark text-white p-8">
-              <h3 class="font-bold text-3xl">Stay Connected</h3>
+              <h3 class="font-bold text-2xl">Stay Connected</h3>
               <div class="socials-container flex flex-row justify-start items-center gap-6">
                 <img src="images/icons/facebook.svg" alt="facebook" class="invert"/>
                 <img src="images/icons/instagram.svg" alt="IG" class="invert"/>
@@ -1079,7 +977,7 @@
       </section>
 
       <!-- SECTION DIVIDER -->
-      <div id="section-divider" class="flex justify-center items-center py-8 bg-primary-dark text-white -mt-9 z-20 absolute w-full">
+      <div id="section-divider" class="flex justify-center items-center py-8 bg-primary-dark text-white  w-full">
         <div id="scroll-track" class="flex justify-center items-center gap-16 overflow-hidden  whitespace-nowrap space-x-16 group hover:cursor-pointer">
           <ul class="flex gap-16 animate-loop-scroll aria-hidden:true space-x-16 group-hover:paused">
             <li class="flex justify-center items-center gap-6"><img class="w-8 h-8 invert" src="images/icons/star-1.svg" alt="" /> App UI Design</li>
@@ -1126,7 +1024,7 @@
       </div>
 
       <!-- TESTIMONIAL SECTION -->
-      <section class="testimonial-section w-full h-auto px-4 py-32 flex flex-col justify-start items-start gap-8 md:px-32 md:py-32 border-b-2 border-gray-200">
+      <section class="testimonial-section w-full h-auto flex flex-col justify-center items-center gap-8 px-4 py-12 md:px-8 lg:px-28 border-b-2 border-gray-200">
         <div class="section-header w-full h-auto flex flex-col justify-center items-center gap-6 py-4">
           <h4 class="font-bold text-2xl text-primary-dark md:text-3xl">Clients Testimonial</h4>
           <h2 class="font-bold text-3xl text-primary-dark md:text-5xl">Clients that <span class="text-tertiary">Speaks to My Results</span></h2>
@@ -1204,7 +1102,7 @@
       </section>
 
       <!-- FAQ SECTION -->
-      <section class="faq-section flex flex-col justify-start items-start gap-8 px-4 py-32 md:px-32 md:py-32 w-full h-auto">
+      <section class="faq-section w-full h-auto flex flex-col justify-center items-center gap-8 px-4 py-12 md:px-8 lg:px-28">
         <div class="section-header w-full h-auto flex flex-col justify-center items-center gap-4 py-4">
           <div class="section-heading-text w-full h-auto flex flex-col justify-center items-center gap-4">
             <h4 class="font-bold text-3xl text-primary-dark md:text-2xl">FAQs</h4>
@@ -1212,35 +1110,19 @@
           </div>
         </div>
 
-        <div class="faq-main-cont w-full h-auto flex flex-col justify-start items-start gap-8 md:flex-row md:justify-between md:items-start md:gap-12">
-          <div class="faq-cont w-full h-auto flex flex-col justify-start items-start gap-4">
+        <div class="faq-main-cont w-full h-auto flex flex-col justify-start items-start gap-12 lg:grid  lg:grid-cols-[70%_30%] md:justify-start md:items-start md:gap-4">
+
             <div class="faq-dropdown-block-container w-full h-auto flex flex-col justify-start items-start gap-4">
 
-              <div class="faq-blocks w-full h-auto flex flex-col justify-start items-start gap-2  bg-slate-50 p-6 rounded-[24px] border-l-4 border-primary-dark mb-4 hover:bg-white hover:shadow-sm transition ease-out delay-75 hover:transition-all">
-                <div class="question w-full h-auto flex flex-row justify-between items-center gap-2">
-                  <h4 class="font-bold md:text-2xl text-[16px]">What tools do you use?</h4>
-                  <img src="/images/icons/add.svg" alt="" class="cursor-pointer bg-slate-300 p-4 rounded-lg hover:bg-slate-50"/>
-                  <img src="/images/icons/minus.svg" alt="" class="cursor-pointer bg-slate-300 p-4 rounded-lg hover:bg-slate-50 hidden"/>
-                </div>
-  
-                <div class="answer">
-                  <p class="text-[18px] md:text-lg hidden">
-                    I start by understanding your needs, then create wireframes,
-                    move into design, and if needed, handle frontend development.
-                    I keep communication clear at every stage.
-                  </p>
-                </div>
-              </div>
-  
-              <div class="faq-blocks w-full h-auto flex flex-col justify-start items-start gap-2 bg-slate-50 p-6 rounded-[24px] border-l-4 border-primary-dark mb-4 hover:bg-white hover:shadow-sm transition ease-out delay-75 hover:transition-all">
+              <div class="faq-blocks w-full h-auto flex flex-row justify-center items-center gap-2  bg-slate-50 p-4 rounded-[24px] border-l-4 border-primary-dark hover:bg-white hover:shadow-sm transition ease-out delay-75 hover:transition-all">
                 <div class="question w-full h-auto flex flex-row justify-between items-center">
-                  <h4 class="font-bold md:text-2xl text-[16px]">What tools do you use?</h4>
-                  <img src="/images/icons/add.svg" alt="" class="cursor-pointer bg-slate-300 p-4 rounded-lg hover:bg-slate-50"/>
-                  <img src="/images/icons/minus.svg" alt="" class="cursor-pointer bg-slate-300 p-4 rounded-lg hover:bg-slate-50 hidden"/>
+                  <h4 class="font-bold text-[16px]">What tools do you use?</h4>
+                  <i class="fa-solid fa-angle-down"></i>
+                  <i class="fa-solid fa-xmark hidden"></i>
                 </div>
   
-                <div class="answer">
-                  <p class="text-[18px] md:text-lg hidden">
+                <div class="answer hidden">
+                  <p class="text-[18px] md:text-lg ">
                     I start by understanding your needs, then create wireframes,
                     move into design, and if needed, handle frontend development.
                     I keep communication clear at every stage.
@@ -1248,77 +1130,30 @@
                 </div>
               </div>
   
-              <div class="faq-blocks w-full h-auto flex flex-col justify-start items-start gap-2 bg-slate-50 p-6 rounded-[24px] border-l-4 border-primary-dark mb-4 hover:bg-white hover:shadow-sm transition ease-out delay-75 hover:transition-all">
-                <div class="question w-full h-auto flex flex-row justify-between items-center">
-                  <h4 class="font-bold md:text-2xl text-[16px]">What tools do you use?</h4>
-                  <img src="/images/icons/add.svg" alt="" class="cursor-pointer bg-slate-300 p-4 rounded-lg hover:bg-slate-50"/>
-                  <img src="/images/icons/minus.svg" alt="" class="cursor-pointer bg-slate-300 p-4 rounded-lg hover:bg-slate-50 hidden"/>
-                </div>
-  
-                <div class="answer">
-                  <p class="text-[18px] md:text-lg hidden">
-                    I start by understanding your needs, then create wireframes,
-                    move into design, and if needed, handle frontend development.
-                    I keep communication clear at every stage.
-                  </p>
-                </div>
-              </div>
-  
-              <div class="faq-blocks w-full h-auto flex flex-col justify-start items-start gap-2 bg-slate-50 p-6 rounded-[24px] border-l-4 border-primary-dark mb-4 hover:bg-white hover:shadow-sm transition ease-out delay-75 hover:transition-all">
-                <div class="question w-full h-auto flex flex-row justify-between items-center">
-                  <h4 class="font-bold md:text-2xl text-[16px]">What tools do you use?</h4>
-                  <img src="/images/icons/add.svg" alt="" class="cursor-pointer bg-slate-300 p-4 rounded-lg hover:bg-slate-50"/>
-                  <img src="/images/icons/minus.svg" alt="" class="cursor-pointer bg-slate-300 p-4 rounded-lg hover:bg-slate-50 hidden"/>
-                </div>
-  
-                <div class="answer">
-                  <p class="text-[18px] md:text-lg hidden">
-                    I start by understanding your needs, then create wireframes,
-                    move into design, and if needed, handle frontend development.
-                    I keep communication clear at every stage.
-                  </p>
-                </div>
-              </div>
-  
-              <div class="faq-blocks w-full h-auto flex flex-col justify-start items-start gap-2 bg-slate-50 p-6 rounded-[24px] border-l-4 border-primary-dark mb-4 hover:bg-white hover:shadow-sm transition ease-out delay-75 hover:transition-all">
-                <div class="question w-full h-auto flex flex-row justify-between items-center">
-                  <h4 class="font-bold md:text-2xl text-[16px]">What tools do you use?</h4>
-                  <img src="/images/icons/add.svg" alt="" class="cursor-pointer bg-slate-300 p-4 rounded-lg hover:bg-slate-50"/>
-                  <img src="/images/icons/minus.svg" alt="" class="cursor-pointer bg-slate-300 p-4 rounded-lg hover:bg-slate-50 hidden"/>
-                </div>
-  
-                <div class="answer">
-                  <p class="text-[18px] md:text-lg hidden">
-                    I start by understanding your needs, then create wireframes,
-                    move into design, and if needed, handle frontend development.
-                    I keep communication clear at every stage.
-                  </p>
-                </div>
-              </div>
             </div>
-          </div>
-  
-          <div class="faq-contact-card w-full md:w-1/3  h-auto bg-slate-50 rounded-[24px]  flex flex-col justify-start items-start gap-12 overflow-hidden">
+
+            <div class="faq-contact-card w-full  h-auto bg-slate-50 rounded-[24px]  flex flex-col justify-start items-start gap-6 overflow-hidden">
             <div class="faq-contact-card-top w-full h-auto flex flex-col justify-center items-center gap-6 p-8">
               <img src="images/icons/message-2.svg" alt="message"  class="w-fit bg-white p-4 rounded-xl"/>
   
               <div class="text-group w-full h-auto flex flex-col justify-center items-center gap-8 text-center">
-                <h3 class="font-bold text-2xl md:text-4xl">You have a different question? Ask Away!</h3>
-                <p class="text-2xl font-normal">Your questions, My Answers. Quick Responses Guaranteed.</p>
+                <h3 class="font-bold text-base md:text-2xl">You have a different question? Ask Away!</h3>
+                <p class="text-base font-normal">Your questions, My Answers. Quick Responses Guaranteed.</p>
               </div>
   
-              <div class="button-container w-full h-auto bg-primary-dark px-8 py-4 text-white font-medium cursor-pointer rounded-lg hover:transition-all ease-out delay-75 hover:px-12 md:w-fit text-center">
-                <a href="#">Contact Me</a>
-              </div>
+              <a href="#contact" class="primary-button">Contact Me</a>
             </div>
   
             <div class="faq-contact-card-bottom bg-primary-dark p-10 w-full"></div>
+            </div>
           </div>
-        </div>
+  
+          
+        
       </section>
 
       <!-- SECTION DIVIDER -->
-      <div id="section-divider" class="flex justify-center items-center py-8 bg-primary-dark text-white -mt-9 z-20 absolute w-full">
+      <div id="section-divider" class="flex justify-center items-center py-8 bg-primary-dark text-white  w-full">
         <div id="scroll-track" class="flex justify-center items-center gap-16 overflow-hidden  whitespace-nowrap space-x-16 group hover:cursor-pointer">
           <ul class="flex gap-16 animate-loop-scroll aria-hidden:true space-x-16 group-hover:paused">
             <li class="flex justify-center items-center gap-6"><img class="w-8 h-8 invert" src="images/icons/star-1.svg" alt="" /> App UI Design</li>
@@ -1365,65 +1200,63 @@
       </div>
 
       <!-- FOOTER SECTION -->
-      <section class="footer-section w-full h-auto px-4 py-28 flex flex-col justify-center items-center gap-8 bg-slate-100 md:px-32 md:justify-start md:items-start md:gap-12">
+      <section class="footer-section w-full h-auto flex flex-col justify-center items-center gap-4 py-8 md:py-12 px-4 md:px-8 lg:px-28">
+
         <div class="section-header w-full h-auto flex flex-col justify-center items-center gap-4 py-8 border-b-2 border-gray-200 md:flex-row md:justify-between md:items-center md:gap-6">
-          <h2 class="font-bold text-3xl md:text-5xl">Lets <span class="text-tertiary">Connect</span> here</h2>
-          <div class="primary-button w-full h-auto bg-primary-dark px-8 py-4 text-white font-medium cursor-pointer rounded-lg hover:transition-all ease-out delay-75 hover:px-12 md:w-fit text-center">
-            <a href="#">Contact Me</a>
-          </div>
+          <h2 class="font-bold text-2xl md:text-3xl">Lets <span class="text-tertiary">Connect</span> here</h2>
+          <a href="#contact" class="primary-button">Contact Me</a>
         </div>
 
-        <div class="footer-links-and-contact-cont w-full h-auto flex flex-col justify-center items-center gap-8 md:flex-row md:justify-between md:items-start md:gap-12">
+        <div class="footer-links-and-contact-cont w-full h-auto flex flex-col justify-center items-center gap-8 md:grid md:grid-cols-3 md:justify-between md:items-start md:gap-12">
+
           <div class="name-and-socials w-fit h-auto flex flex-col justify-center items-center gap-4 md:items-start md:justify-start">
-            <h2 class="font-bold text-4xl md:text-center">Jonathan Joseph</h2>
+            <h2 class="font-bold text-2xl md:text-center">Jonathan Joseph</h2>
             <div class="socials flex flex-row justify-center items-center gap-4 md:justify-start md:items-start">
-              <img src="images/icons/facebook.svg" alt="facebook" class="bg-tertiary p-4 rounded-lg w-[62px]"/>
+              <img src="images/icons/facebook.svg" alt="facebook" class=" rounded-lg "/>
 
-              <img src="images/icons/instagram.svg" alt="" class="bg-tertiary p-4 rounded-lg w-[62px]"/>
+              <img src="images/icons/instagram.svg" alt="" class=""/>
 
-              <img src="images/icons/skill-icons_css.svg" alt="" class="bg-tertiary p-4 rounded-lg w-[62px]"/>
+              <img src="images/icons/skill-icons_css.svg" alt="" class=""/>
             </div>
           </div>
 
           <div class="navigation-links w-fit h-auto flex flex-col justify-center items-center gap-4 md:items-start md:justify-start">
             <div class="footer-nav-heade">
-              <h3 class="font-medium text-3xl text-tertiary">Navigation</h3>
+              <h3 class="font-medium text-2xl text-tertiary">Navigation</h3>
             </div>
 
             <div class="navigation-links w-fit h-auto flex flex-col justify-center items-center gap-4 md:items-start md:justify-start">
-              <a href="#" class="text-[24px] hover:font-bold">Home</a>
-              <a href="#" class="text-[24px] hover:font-bold">Services</a>
-              <a href="#" class="text-[24px] hover:font-bold">About</a>
-              <a href="#" class="text-[24px] hover:font-bold">Projects</a>
-              <a href="#" class="text-[24px] hover:font-bold">FAQs</a>
+              <a href="#" class="text-[16px] hover:font-bold">Home</a>
+              <a href="#" class="text-[16px] hover:font-bold">Services</a>
+              <a href="#" class="text-[16px] hover:font-bold">About</a>
+              <a href="#" class="text-[16px] hover:font-bold">Projects</a>
+              <a href="#" class="text-[16px] hover:font-bold">FAQs</a>
             </div>
           </div>
 
           <div class="footer-contact flex flex-col justify-center items-center gap-4 md:items-start md:justify-start">
             <h3 class="font-medium text-3xl text-tertiary mb-4">Contact</h3>
-            <div class="footer-contact-details w-fit h-auto flex flex-col justify-center items-center gap-4 md:items-start md:justify-start">
-              <p class="text-[24px] font-medium">+234-7065008157</p>
-              <p class="text-[24px] font-medium">www.jonathanwebportfolio.netlify.app</p>
-              <p class="text-[24px] font-medium">ikpejonathanjoseph@gmail.com</p>
-              <p class="text-[24px] font-medium">29 Durban Street, Wuse 2 Abuja</p>
+            <div class="footer-contact-details w-full h-auto flex flex-col justify-center items-center gap-4 md:items-start md:justify-start">
+              <p class="text-[16px] font-medium">+234-7065008157</p>
+              <p class="text-[16px] font-medium">www.jonathanwebportfolio.netlify.app</p>
+              <p class="text-[16px] font-medium">ikpejonathanjoseph@gmail.com</p>
+              <p class="text-[16px] font-medium">29 Durban Street, Wuse 2 Abuja</p>
             </div>
           </div>
         </div>
       </section>
 
       <!-- COPYRIGHT SECTION -->
-      <section class="copyright w-full h-auto px-4 py-8 flex flex-col justify-center items-center gap-4 bg-primary-dark text-center text-white md:flex-row md:justify-between md:items-center md:px-32">
-        <p class="font-bold text-2xl md:text-3xl">Copyright &copy; 2025 Jonathan Joseph</p>
+      <section class="copyright w-full h-auto flex flex-col justify-center items-center gap-4 py-8 md:px-8 lg:px-28 bg-primary-dark text-slate-100">
+        <p class="font-bold text-lg md:text-base">Copyright &copy; 2025 Jonathan Joseph</p>
         <div class="copyright-links flex flex-row justify-center items-center gap-4 md:gap-8">
-          <a href="#" class="font-normal text-2xl md:text-3xl">User Terms & Conditions</a>
+          <a href="#" class="font-normal text-2xl md:text-base">User Terms & Conditions</a>
           <p class="font-normal text-2xl md:text-3xl">|</p>
-          <a href="#" class="font-normal text-2xl md:text-3xl">Privacy Policy</a>
+          <a href="#" class="font-normal text-2xl md:text-base">Privacy Policy</a>
         </div>
       </section>
     </div>
 
-    <script src="js/main.js">
-     
-    </script>
+    <script src="./js/index.js" defer type="module"></script>
   </body>
 </html>

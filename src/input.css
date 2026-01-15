@@ -7,3 +7,14 @@
     animation-play-state: paused;
   }
 }
+
+
+@layer components{
+  .primary-button{
+    @apply w-full text-center text-white font-semibold px-6 py-2 bg-primary-dark rounded-lg transition ease-in-out delay-75 hover:transition-all md:w-fit hover:px-8;
+  }
+
+  .secondary-button{
+    @apply w-full text-center text-primary-dark border border-primary-dark font-semibold px-6 py-2  rounded-lg transition ease-in-out delay-75 hover:transition-all md:w-fit hover:px-8;
+  }
+}
