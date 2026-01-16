@@ -18,3 +18,20 @@
     @apply w-full text-center text-primary-dark border border-primary-dark font-semibold px-6 py-2  rounded-lg transition ease-in-out delay-75 hover:transition-all md:w-fit hover:px-8;
   }
 }
+
+@layer utilities {
+  .no-scrollbar {
+    -ms-overflow-style: none; /* IE + Edge */
+    scrollbar-width: none;    /* Firefox */
+  }
+
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;            /* Chrome, Safari */
+  }
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}

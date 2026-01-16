@@ -122,7 +122,6 @@ document.addEventListener("DOMContentLoaded", () => {
     // Active link state
     const allNavLinks = document.querySelectorAll('#link a')
 
-    console.log(allNavLinks);
     
 
     allNavLinks.forEach(eachLink => {

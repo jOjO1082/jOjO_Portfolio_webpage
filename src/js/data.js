@@ -4,7 +4,10 @@ export const myServices = [
         id : 1,
         title : "Web Development",
         img : "https://images.unsplash.com/photo-1519389950473-47ba561d188a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
-        text : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, placeat."
+        text : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, placeat.",
+        servicesDetails: {
+            
+        }
     },
 
     {
@@ -145,7 +148,9 @@ export const projects = [
         title : "Project 1",
         category : "Web Development",
         img : "https://images.unsplash.com/photo-1519389950473-47ba561d188a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
-        text : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, placeat."
+        text : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, placeat.",
+        tags : ["HTML", "CSS", "Javascript"],
+        link : "https://www.google.com"
     },
     
     {
@@ -153,7 +158,9 @@ export const projects = [
         title : "Project 2",
         category : "UI/UX Design",
         img : "https://images.unsplash.com/photo-1519389950473-47ba561d188a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
-        text : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, placeat."
+        text : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, placeat.",
+        tags : ["HTML", "CSS", "Javascript"],
+        link : "https://www.google.com"
     },
     
     {
@@ -161,8 +168,20 @@ export const projects = [
         title : "Project 3",
         category : "Graphic Design",
         img : "https://images.unsplash.com/photo-1519389950473-47ba561d188a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
-        text : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, placeat."
-    }
+        text : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, placeat.",
+        tags : ["HTML", "CSS", "Javascript"],
+        link : "https://www.google.com"
+    },
+
+    {
+        id : 4,
+        title : "Project 4",
+        category : "Web Development",
+        img : "https://images.unsplash.com/photo-1519389950473-47ba561d188a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
+        text : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, placeat.",
+        tags : ["HTML", "CSS", "Javascript"],
+        link : "https://www.google.com"
+    },
 ]
 
 
@@ -210,3 +229,4 @@ export const faqData = [
         answer : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, placeat."
     }
 ]
+
