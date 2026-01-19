@@ -631,6 +631,10 @@ html {
   }
 }
 
+.fixed {
+  position: fixed;
+}
+
 .absolute {
   position: absolute;
 }
@@ -639,12 +643,20 @@ html {
   position: relative;
 }
 
+.bottom-12 {
+  bottom: 3rem;
+}
+
 .left-0 {
   left: 0px;
 }
 
 .right-0 {
   right: 0px;
+}
+
+.right-4 {
+  right: 1rem;
 }
 
 .top-0 {
@@ -681,6 +693,10 @@ html {
 
 .h-12 {
   height: 3rem;
+}
+
+.h-16 {
+  height: 4rem;
 }
 
 .h-28 {
@@ -723,8 +739,16 @@ html {
   height: 100%;
 }
 
+.h-\[64px\] {
+  height: 64px;
+}
+
 .w-12 {
   width: 3rem;
+}
+
+.w-16 {
+  width: 4rem;
 }
 
 .w-28 {
@@ -796,6 +820,16 @@ html {
   animation: loop-scroll 10s linear infinite;
 }
 
+@keyframes pulse {
+  50% {
+    opacity: .5;
+  }
+}
+
+.animate-pulse {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
 .cursor-pointer {
   cursor: pointer;
 }
@@ -858,6 +892,10 @@ html {
 
 .justify-between {
   justify-content: space-between;
+}
+
+.justify-stretch {
+  justify-content: stretch;
 }
 
 .gap-1 {
@@ -1054,11 +1092,6 @@ html {
   padding: 2rem;
 }
 
-.px-10 {
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
-}
-
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
@@ -1179,6 +1212,10 @@ html {
   line-height: 1.25rem;
 }
 
+.text-\[12px\] {
+  font-size: 12px;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -1234,8 +1271,22 @@ html {
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
 }
 
+.text-\[base\] {
+  color: base;
+}
+
+.text-\[2xl\] {
+  color: 2xl;
+}
+
 .opacity-20 {
   opacity: 0.2;
+}
+
+.shadow-lg {
+  --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
 .invert {
@@ -1461,13 +1512,12 @@ html {
     gap: 2rem;
   }
 
-  .md\:overflow-hidden {
-    overflow: hidden;
+  .md\:gap-2 {
+    gap: 0.5rem;
   }
 
-  .md\:bg-primary-dark {
-    --tw-bg-opacity: 1;
-    background-color: rgb(57 19 19 / var(--tw-bg-opacity, 1));
+  .md\:overflow-hidden {
+    overflow: hidden;
   }
 
   .md\:px-8 {
@@ -1554,15 +1604,6 @@ html {
     font-weight: 700;
   }
 
-  .md\:font-medium {
-    font-weight: 500;
-  }
-
-  .md\:text-white {
-    --tw-text-opacity: 1;
-    color: rgb(255 255 255 / var(--tw-text-opacity, 1));
-  }
-
   .md\:delay-75 {
     transition-delay: 75ms;
   }
@@ -1585,12 +1626,12 @@ html {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
-  .lg\:grid-cols-\[70\%_30\%\] {
-    grid-template-columns: 70% 30%;
-  }
-
   .lg\:grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .lg\:grid-cols-\[70\%_30\%\] {
+    grid-template-columns: 70% 30%;
   }
 
   .lg\:overflow-x-hidden {

@@ -2,6 +2,9 @@ import { myTools } from "./data.js";
 import { faqData } from "./data.js";
 
 
+
+
+
 document.addEventListener("DOMContentLoaded", () => {
     
     // Render all tools to the frontend
@@ -118,25 +121,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     
 
-    
-    // Active link state
-    const allNavLinks = document.querySelectorAll('#link a')
 
     
-
-    allNavLinks.forEach(eachLink => {
-        eachLink.addEventListener('click', () => {
-            allNavLinks.forEach(link => {
-                link.classList.remove('text-tertiary', 'font-bold' )
-                link.classList.add('text-primary-dark')
-            })
-            eachLink.classList.remove('text-primary-dark')
-            eachLink.classList.add('text-tertiary', 'font-bold')
-        })
-    })
-
-    
-
-    
-
 });

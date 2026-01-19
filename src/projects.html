@@ -20,7 +20,14 @@
   <body class="">
 
 
-    <div id="wrapper" class="w-full h-auto font-sans flex flex-col gap-10  md:gap-32">
+    <div id="wrapper" class="w-full h-auto font-sans flex flex-col gap-10  md:gap-32 relative">
+
+      <!-- Floating Button -->
+      <a href="https://wa.me/2347065008157?text=I%20want%20to%20hire%20you" target="_blank" class="absolute animate-pulse shadow-lg">
+        <div id="floating-button" class="w-16 h-16 bg-tertiary flex flex-col justify-center items-center rounded-[50px] fixed bottom-12 right-4 z-1 cursor-pointer">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-brand-whatsapp"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9" /><path d="M9 10a.5 .5 0 0 0 1 0v-1a.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a.5 .5 0 0 0 0 -1h-1a.5 .5 0 0 0 0 1" /></svg>
+        </div>
+      </a>
 
       <!-- NAVIGATION -->
       <div id="nav-bar" class="w-full h-auto flex flex-row justify-between items-center px-4 py-4 md:px-8 lg:px-28 z-1 relative">
@@ -36,14 +43,14 @@
 
           <div id="link" class="md:flex md:gap-4  text-gray-900 hidden">
             <a href="index.html" class="text-lg font-bold text-tertiary hover:font-bold hover:text-tertiary">Home</a>
-            <a href="services.html" class="text-lg hover:font-bold hover:text-tertiary">Services</a>
+            <a href="#my-services-section" class="text-lg hover:font-bold hover:text-tertiary">Services</a>
             <a href="projects.html" class="text-lg hover:font-bold hover:text-tertiary">Projects</a>
             <a href="testimonials.html" class="text-lg hover:font-bold hover:text-tertiary">Testimonials</a>
           </div>
 
-          <div id="primary-button" class="md:bg-primary-dark md:text-white md:font-medium px-10 py-2 rounded-lg hover:px-12 transition ease-in-out delay-75 hover:transition-all md:block hidden">
-            <a href="#">Lets Talk</a>
-          </div>
+          
+          <a href="https://wa.me/2347065008157?text=I%20want%20to%20hire%20you" class="primary-button hidden md:block">Lets Talk</a>
+          
 
           <div id="menu-button" class="md:hidden block font-bold cursor-pointer">
             <i class="fa-solid fa-bars"></i>
@@ -58,17 +65,18 @@
           </div>
 
           <div id="mobile-menu-links" class="flex flex-col gap-6 text-white">
-            <a href="services.html" class="hover:font-bold">Services</a>
+            <a href="#my-services-section" class="hover:font-bold">Services</a>
             <a href="projects.html" class="hover:font-bold">Projects</a>
             <a href="testimonials.html" class="hover:font-bold">Testimonials</a>
           </div>
 
           
-            <a href="#" class="w-full text-center text-white font-semibold px-6 py-2 bg-primary-dark rounded-lg transition ease-in-out delay-75 hover:transition-all md:w-fit hover:scale-x-110">Lets Talk</a>
+            <a href="https://wa.me/2347065008157?text=I%20want%20to%20hire%20you" class="w-full text-center text-white font-semibold px-6 py-2 bg-primary-dark rounded-lg transition ease-in-out delay-75 hover:transition-all md:w-fit hover:scale-x-110">Lets Talk</a>
                     
           </div>
         </div>
       </div>
+    
 
       <!-- HERO SECTION -->
       <section class="hero w-full h-auto flex flex-col justify-start items-center gap-4 px-4 md:px-8 lg:px-28 py-12 md:py-20">
@@ -499,5 +507,6 @@
 
     <script src="./js/index.js" defer type="module"></script>
     <script src="./js/projects.js" defer type="module"></script>
+    <script src="./js/activelinks.js" defer ></script>
   </body>
 </html>
