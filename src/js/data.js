@@ -144,42 +144,162 @@ export const myTools = [
 export const projects = [
     {
         id : 1,
-        title : "Project 1",
+        title : "Glintech Academy Website",
         category : "Web Development",
-        img : "https://images.unsplash.com/photo-1519389950473-47ba561d188a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
-        text : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, placeat.",
-        tags : ["HTML", "CSS", "Javascript"],
-        link : "https://www.google.com"
+        img : "images/JOBS/ONLINESCHOOL.png",
+        text : "A website to Learn in-demand skills through short, practical online courses designed for busy learners. Each expert-led micro‑lesson focuses on real‑world application—no fluff, just results.",
+        tags : ["HTML", "Tailwind-CSS", "Javascript"],
+        link : "https://glintech-academy.netlify.app/"
     },
     
     {
         id : 2,
-        title : "Project 2",
-        category : "UI/UX Design",
-        img : "https://images.unsplash.com/photo-1519389950473-47ba561d188a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
-        text : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, placeat.",
+        title : "Non-Profit Website",
+        category : "Web Development",
+        img : "images/JOBS/NGO.png",
+        text : "A non‑profit empowering young adults and children with free tech training. Glint Tech equips the next generation with digital skills they can use to learn, earn from home, and kick-start their careers.",
         tags : ["HTML", "CSS", "Javascript"],
-        link : "https://www.google.com"
+        link : "https://learnaskillngo.netlify.app/"
     },
     
     {
         id : 3,
-        title : "Project 3",
-        category : "Graphic Design",
-        img : "https://images.unsplash.com/photo-1519389950473-47ba561d188a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
-        text : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, placeat.",
-        tags : ["HTML", "CSS", "Javascript"],
-        link : "https://www.google.com"
+        title : "Nile Mass Comm Studios Website",
+        category : "Web Development",
+        img : "images/JOBS/NILEMASSCOMM.png",
+        text : "A showcase of innovative print, broadcast, and digital media projects demonstrating the creative and technical strengths of our Mass Communication Department",
+        tags : ["HTML", "Tailwind-CSS", "Javascript"],
+        link : "https://nilemasscommstudios.netlify.app/"
     },
 
     {
         id : 4,
-        title : "Project 4",
+        title : "Personal Portfolio Website",
         category : "Web Development",
-        img : "https://images.unsplash.com/photo-1519389950473-47ba561d188a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
-        text : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, placeat.",
-        tags : ["HTML", "CSS", "Javascript"],
-        link : "https://www.google.com"
+        img : "images/JOBS/PORT.png",
+        text : "A showcase of purposeful, user‑focused digital products crafted through balanced design and front‑end development.",
+        tags : ["HTML", "Tailwind-CSS", "Javascript"],
+        link : "https://jonathanjosephporfolio.netlify.app/"
+    },
+
+    {
+        id : 5,
+        title : "NGO Learning Website Design",
+        category : "UI/UX Design",
+        img : "images/JOBS/NGO.png",
+        text : "Product design and frontend development work focused on clean interfaces and real‑world solutions.",
+        tags : ["Figma", "Design System", "Wireframing", "Prototyping"],
+        link : "https://www.behance.net/gallery/229289813/NGO-Learning-Website-Design"
+    },
+
+    {
+        id : 6,
+        title : "Property Management and real estate Management UI Design",
+        category : "UI/UX Design",
+        img : "images/JOBS/TENANCY.png",
+        text : "A user‑centered product design solution for Property Management and real estate Management, crafted to simplify tenant interactions and elevate their brand experience.",
+        tags : ["Figma", "Design System", "Wireframing"],
+        link : "https://www.behance.net/gallery/229821573/Property-Managent-and-real-estate-Management-UI-Design"
+    },
+
+    {
+        id : 7,
+        title : "Enamel Dental Care",
+        category : "UI/UX Design",
+        img : "images/JOBS/CARE.png",
+        text : "A user‑centered product design solution for Enamel Dental Care, crafted to simplify patient interactions and elevate their brand experience.",
+        tags : ["Figma", "Design System", "Wireframing"],
+        link : "https://www.behance.net/gallery/187079515/Enamel-Dental-Care?platform=direct"
+    },
+
+    {
+        id : 8,
+        title : "NIN Update App UI Design",
+        category : "UI/UX Design",
+        img : "images/JOBS/NIMC.png",
+        text : "A user‑centered product design solution for National Identity Management Commission Update App, crafted to simplify user interactions and elevate the pain point of maunally updating NIN.",
+        tags : ["Figma", "Design System", "Wireframing"],
+        link : "https://www.behance.net/gallery/191375007/NIN-Update-App"
+    },
+
+    {
+        id : 9,
+        title : "Dashboard UI Design for Wujupe",
+        category : "UI/UX Design",
+        img : "images/JOBS/OWUJUPE.png",
+        text : "A user‑centered product design solution for Wujupe Dashboard, crafted to simplify user interactions and elevate their brand experience.",
+        tags : ["Figma", "Design System", "Wireframing"],
+        link : "https://www.behance.net/gallery/210103023/Dashboard-UI-Design"
+    },
+
+    {
+        id : 10,
+        title : "Thrift Savings App UI Design",
+        category : "UI/UX Design",
+        img : "images/JOBS/THRIFT.png",
+        text : "A user‑centered product design solution for Thrift Savings App, crafted to simplify user interactions and to foster a sense of community.",
+        tags : ["Figma", "Design System", "Wireframing"],
+        link : "https://www.behance.net/gallery/189002035/Thrift-Savings-App"
+    },
+
+    {
+        id : 11,
+        title : "UI Kit For Project Management",
+        category : "UI/UX Design",
+        img : "images/JOBS/PROJECT-MANGT.png",
+        text : "A user‑centered product design solution for Project Management UI Kit, crafted to simplify user interactions and to foster a sense of community.",
+        tags : ["Figma", "Design System", "UI Kit"],
+        link : "https://www.behance.net/gallery/192752591/UI-Kit-For-Project-Management"
+    },
+
+    {
+        id : 12,
+        title : "Kwikinvoice webpage Redesign",
+        category : "UI/UX Design",
+        img : "images/JOBS/KWIK.png",
+        text : "A user‑centered product design solution for Kwikinvoice webpage redesign, crafted to simplify user interactions and to foster a sense of community.",
+        tags : ["Figma", "Design System", "Webpage Redesign"],
+        link : "https://www.behance.net/gallery/196910337/Kwikinvoice-webpage-Redesign"
+    },
+
+    {
+        id : 12,
+        title : "Redesign Tailwind Components - Pixel for Pixel",
+        category : "UI/UX Design",
+        img : "images/JOBS/PXFORPX.png",
+        text : "A task to master designing real-world components following tailwind's guidline and design systems.",
+        tags : ["Figma", "Design System", "Components"],
+        link : "https://www.behance.net/gallery/188706099/Redesign-Tailwind-Components-Pixel-for-Pixel"
+    },
+
+    {
+        id : 13,
+        title : "Photography Website Design",
+        category : "UI/UX Design",
+        img : "images/JOBS/MIKKLENS.png",
+        text : "A user‑centered product design solution for Photography Website, crafted to simplify user interactions and to foster a sense of community.",
+        tags : ["Figma", "Design System", "Wireframing"],
+        link : "https://www.behance.net/gallery/188610311/Photography-Website-Design"
+    },
+
+    {
+        id : 14,
+        title : "Renewable Energy UX & UI Design",
+        category : "UI/UX Design",
+        img : "images/JOBS/GREEN.png",
+        text : "A user‑centered product design solution for Renewable Energy UX & UI Design, showcasing a clean and intuitive interface for sustainable energy management.",
+        tags : ["Figma", "Case study", "Wireframing"],
+        link : "https://www.behance.net/gallery/183367691/Renewable-Energy-UX-UI-Design"
+    },
+
+    {
+        id : 15,
+        title : "Graphics Design Portfolio 2024",
+        category : "Graphic Design",
+        img : "images/JOBS/GRAPHICS.png",
+        text : "Showing all graphics work from logo design, social media design, and print design. A user‑centered product design solution for Graphics Design Portfolio, showcasing a clean and intuitive interface for sustainable energy management.",
+        tags : ["Figma", "Case study", "Wireframing"],
+        link : "https://www.behance.net/gallery/181416627/Graphic-Designer-Portfolio"
     },
 ]
 

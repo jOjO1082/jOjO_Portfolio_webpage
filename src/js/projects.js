@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
             projectsContainer.innerHTML += `    
 
                 <div class="project-card w-full h-auto flex flex-col justify-start items-stretch gap-8 bg-slate-100 rounded-[24px] p-4 hover:bg-white hover:shadow-sm border-l-4 border-primary-dark ">
-            <img class="w-full h-48 object-cover rounded-lg md:h-full" src="${eachProject.img}" alt="${eachProject.title}" />
+            <img class="w-full h-48 object-cover rounded-lg md:h-48" src="${eachProject.img}" alt="${eachProject.title}" />
 
             <div class="project-card-right w-full h-auto flex flex-col justify-start items-start gap-4">
               <div class="tags-container w-full h-auto flex flex-row justify-start items-center gap-4 flex-wrap">
@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
               
                 <a href="${eachProject.link}" target="_blank"
-                  class="flex flex-row justify-start items-center gap-2 text-[18px] hover:italic">View case study
+                  class="flex flex-row justify-start items-center gap-2 text-[18px] hover:italic">View Project
                   <img src="images/icons/arrow-right.svg" alt="" class="flex justify-center items-center"
                 /></a>
               </div>
