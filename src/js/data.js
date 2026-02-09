@@ -301,6 +301,26 @@ export const projects = [
         tags : ["Figma", "Case study", "Wireframing"],
         link : "https://www.behance.net/gallery/181416627/Graphic-Designer-Portfolio"
     },
+
+    {
+        id : 16,
+        title : "Mikkilens Portfolio Website",
+        category : "Web Development",
+        img : "images/JOBS/MIKKIPORT.png",
+        text : "A responsive portfolio website for Mikkilens, showcasing their design and development capabilities with a clean, modern interface and his services.",
+        tags : ["HTML", "Tailwind-CSS", "Javascript"],
+        link : "https://mikkilensmediaportfolio.netlify.app/"
+    },
+
+    {
+        id : 17,
+        title : "Real Estate Website Design",
+        category : "Web Development",
+        img : "images/JOBS/ESTATE.png",
+        text : "A responsive real estate website design showcasing property listings with a clean, modern interface and intuitive navigation.",
+        tags : ["HTML", "Tailwind-CSS", "Javascript"],
+        link : "https://houseplug.netlify.app/"
+    },
 ]
 
 
