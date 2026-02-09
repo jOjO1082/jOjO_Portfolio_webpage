@@ -78,62 +78,69 @@ export const myTools = [
 
     {
         id : 2,
+        title : "Git & Github",
+        img : "images/tools/git.png",
+        skillLevel : "80%"
+    },
+
+    {
+        id : 3,
         title : "CSS",
         img : "images/tools/css.png",
         skillLevel : "80%"
     },
 
     {
-        id : 3,
+        id : 4,
         title : "Javascript",
         img : "images/tools/js.png",
         skillLevel : "65%"
     },
 
     {
-        id : 4,
+        id : 5,
         title : "React",
         img : "images/tools/react.png",
         skillLevel : "10%"
     },  
 
     {
-        id : 5,
+        id : 6,
         title : "Tailwind",
         img : "images/tools/tailwind.png",
         skillLevel : "98%"
     },
 
     {
-        id : 6,
+        id : 7,
         title : "Figma",
         img : "images/tools/figma.png",
         skillLevel : "95%"
     },
 
     {
-        id : 7,
+        id : 8,
         title : "Photoshop",
         img : "images/tools/photoshop.png",
         skillLevel : "70%"
     },
 
     {
-        id : 8,
+        id : 9,
         title : "Illustrator",
         img : "images/tools/illustrator.png",
         skillLevel : "70%"
     },
 
     {
-        id : 9,
+        id : 10,
         title : "WordPress",
         img : "images/tools/wp.png",
         skillLevel : "90%"
     },
 
     {
-        id : 10,
+        id : 11,
         title : "Indesign",
         img : "images/tools/indesign.png",
         skillLevel : "90%"
